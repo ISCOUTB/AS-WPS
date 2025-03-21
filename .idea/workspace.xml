@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="wpsim:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="392c53ea-9274-4c97-a65a-fcdba989e4d5" name="Changes" comment="Configuración hilos bajos, fuzzy bajo.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/SimulationControl/Guards/DeadContainerGuard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/SimulationControl/Guards/DeadContainerGuard.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="MavenRunConfiguration" name="Simulator" />
+    </enabled-run-configurations>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="outputLevel" value="DEBUG" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2TeFuvequJyKc2NXsS9FZYmUrnF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven.Compile.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Simulator.executor&quot;: &quot;Profiler#1&quot;,
+    &quot;Maven.wpsSimulator Profile.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.wpsSimulator [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wpsSimulator [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wpsim [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wpsim [package].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jairo/IdeaProjects/wpsSimulator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16989066&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27296937&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.wpsim.PeasantFamily.Tasks.Base" />
+      <recent name="org.wpsim.PeasantFamily.Goals.Base" />
+      <recent name="org.wpsim.PeasantFamily.Emotions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/web/data" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data.fuzzyRules" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/wpsim/World/layer/" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/fuzzyRules" />
+      <recent name="$PROJECT_DIR$/src/main/resources/test02" />
+      <recent name="$PROJECT_DIR$/src/main/resources/web/data" />
+      <recent name="$PROJECT_DIR$/src/main/resources/web" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.wpsim.PeasantFamily.PeriodicGuards" />
+      <recent name="org.wpsim.ViewerLens.Util" />
+      <recent name="org.wpsim.ViewerLens.Agent" />
+      <recent name="org.wpsim.SimulationControl.Agent" />
+      <recent name="org.wpsim.PerturbationGenerator.PeriodicGuards" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="org.wpsim.Government" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.wpsim.PeasantFamily.Guards.FromCommunityDynamics" />
+      <recent name="org.wpsim.SimulationControl.Guards" />
+      <recent name="org.wpsim.PeasantFamily.Guards.FromCivicAuthority" />
+      <recent name="org.wpsim.PeasantFamily.Tasks.L3Development" />
+      <recent name="org.wpsim.PeasantFamily.Goals.L3Development" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.Simulator">
+    <configuration name="Compile" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Simulator" type="MavenRunConfiguration" factoryName="Maven">
+      <target name="@@@LOCAL@@@" />
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="exec:java" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="wpsSimulator Profile" type="MavenRunConfiguration" factoryName="Maven">
+      <target name="jairo@192.168.1.40:22" />
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="-PPerfilado" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Compile" />
+      <item itemvalue="Maven.Simulator" />
+      <item itemvalue="Maven.wpsSimulator Profile" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="392c53ea-9274-4c97-a65a-fcdba989e4d5" name="Changes" comment="" />
+      <created>1691395873655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691395873655</updated>
+      <workItem from="1691395875033" duration="10891000" />
+      <workItem from="1691408540451" duration="39662000" />
+      <workItem from="1691486995561" duration="50043000" />
+      <workItem from="1691697218293" duration="11352000" />
+      <workItem from="1691767380617" duration="58273000" />
+      <workItem from="1692184779136" duration="701000" />
+      <workItem from="1692185917947" duration="20375000" />
+      <workItem from="1692372095275" duration="19417000" />
+      <workItem from="1692622294598" duration="12315000" />
+      <workItem from="1692748531117" duration="468000" />
+      <workItem from="1692755386819" duration="803000" />
+      <workItem from="1692756240893" duration="6668000" />
+      <workItem from="1692874534165" duration="22703000" />
+      <workItem from="1693388586822" duration="15088000" />
+      <workItem from="1693850011302" duration="14646000" />
+      <workItem from="1695312318456" duration="15537000" />
+      <workItem from="1695510724099" duration="6650000" />
+      <workItem from="1695768773107" duration="429000" />
+      <workItem from="1696172230824" duration="393000" />
+      <workItem from="1696257462151" duration="8960000" />
+      <workItem from="1696296288974" duration="32696000" />
+      <workItem from="1696454491244" duration="3949000" />
+      <workItem from="1696521835599" duration="6186000" />
+      <workItem from="1696552105147" duration="1076000" />
+      <workItem from="1696604567985" duration="2814000" />
+      <workItem from="1696789101566" duration="4480000" />
+      <workItem from="1696859661548" duration="3195000" />
+      <workItem from="1696960703655" duration="5479000" />
+      <workItem from="1696976098438" duration="357000" />
+      <workItem from="1697041785653" duration="227000" />
+      <workItem from="1697042022408" duration="5138000" />
+      <workItem from="1697066217785" duration="7151000" />
+      <workItem from="1697160778720" duration="22966000" />
+      <workItem from="1697589729015" duration="13319000" />
+      <workItem from="1697661485141" duration="8154000" />
+      <workItem from="1697677756893" duration="24565000" />
+      <workItem from="1697846436371" duration="381000" />
+      <workItem from="1697846831147" duration="609000" />
+      <workItem from="1697850007451" duration="42000" />
+      <workItem from="1697850062323" duration="74995000" />
+      <workItem from="1698441113144" duration="1824000" />
+      <workItem from="1698691891667" duration="616000" />
+      <workItem from="1698720555164" duration="1797000" />
+      <workItem from="1698889915337" duration="7740000" />
+      <workItem from="1699285227705" duration="46844000" />
+      <workItem from="1699714546316" duration="1423000" />
+      <workItem from="1699845518364" duration="28910000" />
+      <workItem from="1700001819439" duration="67000" />
+      <workItem from="1701143546648" duration="648000" />
+      <workItem from="1701574827080" duration="417000" />
+      <workItem from="1701575255394" duration="5502000" />
+      <workItem from="1701874619860" duration="3723000" />
+      <workItem from="1702425841071" duration="19128000" />
+      <workItem from="1702865646364" duration="22988000" />
+      <workItem from="1703605681940" duration="26790000" />
+      <workItem from="1703868024990" duration="1218000" />
+      <workItem from="1704213310700" duration="35913000" />
+      <workItem from="1704646164699" duration="49688000" />
+      <workItem from="1705499919918" duration="605000" />
+      <workItem from="1705586375958" duration="50717000" />
+      <workItem from="1706025716287" duration="6796000" />
+      <workItem from="1706045220509" duration="198000" />
+      <workItem from="1706045636763" duration="9065000" />
+      <workItem from="1706148136985" duration="4262000" />
+      <workItem from="1706205005580" duration="16718000" />
+      <workItem from="1706307925052" duration="621000" />
+      <workItem from="1706327655666" duration="1298000" />
+      <workItem from="1706672831265" duration="800000" />
+      <workItem from="1706706891406" duration="9469000" />
+      <workItem from="1707060124097" duration="12336000" />
+      <workItem from="1707434931019" duration="19271000" />
+      <workItem from="1707593010735" duration="123000" />
+      <workItem from="1707664849035" duration="3647000" />
+      <workItem from="1707704020330" duration="299000" />
+      <workItem from="1707704343764" duration="11000" />
+      <workItem from="1707704365763" duration="248000" />
+      <workItem from="1707839124711" duration="93000" />
+      <workItem from="1707839225180" duration="356000" />
+      <workItem from="1707861959241" duration="13668000" />
+      <workItem from="1707915936050" duration="9446000" />
+      <workItem from="1707964714950" duration="1258000" />
+      <workItem from="1708483756568" duration="23266000" />
+      <workItem from="1708620470488" duration="23204000" />
+      <workItem from="1708998143411" duration="3529000" />
+      <workItem from="1709133647872" duration="995000" />
+      <workItem from="1709171192730" duration="1286000" />
+      <workItem from="1709265593378" duration="48000" />
+      <workItem from="1709606540133" duration="6348000" />
+      <workItem from="1709851459383" duration="16299000" />
+      <workItem from="1710265788723" duration="9664000" />
+      <workItem from="1710367588764" duration="2763000" />
+      <workItem from="1710433981924" duration="1472000" />
+      <workItem from="1710436779054" duration="2591000" />
+      <workItem from="1710599866750" duration="1676000" />
+      <workItem from="1710692646648" duration="19433000" />
+      <workItem from="1710778579721" duration="541000" />
+      <workItem from="1710779375093" duration="16338000" />
+      <workItem from="1710803442738" duration="287000" />
+      <workItem from="1710803738585" duration="720000" />
+      <workItem from="1710804476649" duration="4515000" />
+      <workItem from="1710810132576" duration="720000" />
+      <workItem from="1710810859091" duration="2387000" />
+      <workItem from="1710813510390" duration="14250000" />
+      <workItem from="1710902665665" duration="24456000" />
+      <workItem from="1711065565814" duration="19188000" />
+      <workItem from="1711207405328" duration="3183000" />
+      <workItem from="1711252454233" duration="35959000" />
+      <workItem from="1711419608731" duration="9258000" />
+      <workItem from="1711807485044" duration="8210000" />
+      <workItem from="1711817519880" duration="1953000" />
+      <workItem from="1711819794092" duration="414000" />
+      <workItem from="1711820331950" duration="24120000" />
+      <workItem from="1711994083397" duration="3732000" />
+      <workItem from="1712021179272" duration="1060000" />
+      <workItem from="1712071676410" duration="18776000" />
+      <workItem from="1712193353073" duration="1835000" />
+      <workItem from="1712197264626" duration="3000" />
+      <workItem from="1712271266145" duration="5566000" />
+      <workItem from="1712282368240" duration="20707000" />
+      <workItem from="1712426874763" duration="1119000" />
+      <workItem from="1712592286752" duration="3341000" />
+      <workItem from="1712672662091" duration="3344000" />
+      <workItem from="1712959875730" duration="359000" />
+      <workItem from="1712960246332" duration="723000" />
+      <workItem from="1713530714700" duration="52000" />
+      <workItem from="1715053058140" duration="15000" />
+      <workItem from="1715268771396" duration="5320000" />
+      <workItem from="1715745823471" duration="38374000" />
+      <workItem from="1716769394441" duration="35053000" />
+      <workItem from="1717092629198" duration="40550000" />
+      <workItem from="1717257179200" duration="12779000" />
+      <workItem from="1717779896746" duration="5268000" />
+      <workItem from="1718251137250" duration="623000" />
+      <workItem from="1718379601280" duration="11254000" />
+      <workItem from="1718505215743" duration="21656000" />
+      <workItem from="1718675642635" duration="12676000" />
+      <workItem from="1718771018074" duration="7282000" />
+      <workItem from="1719975579290" duration="2169000" />
+      <workItem from="1720812084447" duration="921000" />
+      <workItem from="1720813489602" duration="11901000" />
+      <workItem from="1720889689699" duration="14900000" />
+      <workItem from="1720968153921" duration="37310000" />
+      <workItem from="1722285177782" duration="17575000" />
+      <workItem from="1722359082546" duration="8283000" />
+      <workItem from="1722470772762" duration="10796000" />
+      <workItem from="1722514767974" duration="7385000" />
+      <workItem from="1722893108283" duration="6162000" />
+      <workItem from="1723071970415" duration="6726000" />
+      <workItem from="1723236783241" duration="6496000" />
+      <workItem from="1723510178391" duration="4161000" />
+      <workItem from="1723578486754" duration="10211000" />
+      <workItem from="1723682288037" duration="3567000" />
+      <workItem from="1723844549505" duration="22245000" />
+      <workItem from="1724976907053" duration="22000" />
+      <workItem from="1724976948218" duration="369000" />
+      <workItem from="1725552880172" duration="9178000" />
+      <workItem from="1725893792878" duration="184000" />
+      <workItem from="1726244326640" duration="1132000" />
+      <workItem from="1726505268929" duration="75000" />
+      <workItem from="1726505414167" duration="6000" />
+      <workItem from="1727360501758" duration="5028000" />
+      <workItem from="1727558644003" duration="2799000" />
+      <workItem from="1729737301643" duration="601000" />
+      <workItem from="1742136538821" duration="11151000" />
+      <workItem from="1742350158230" duration="1769000" />
+    </task>
+    <task id="LOCAL-00034" summary="log externo usando logger.">
+      <option name="closed" value="true" />
+      <created>1705783170244</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1705783170244</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Control de tiempo ajustado, los agentes esperan a los agentes demorados.">
+      <option name="closed" value="true" />
+      <created>1706055319996</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1706055319996</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Simulación funcionando sin saltos y de forma acelerada. versión 0.3">
+      <option name="closed" value="true" />
+      <created>1706124674772</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1706124674772</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Siembra cambia las condiciones climáticas según el año">
+      <option name="closed" value="true" />
+      <created>1706213458388</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1706213458388</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Activados los prestamos y pagos en el banco.">
+      <option name="closed" value="true" />
+      <created>1707670322872</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1707670322872</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Activados los prestamos y pagos en el banco.">
+      <option name="closed" value="true" />
+      <created>1707670368829</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1707670368829</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Activados los prestamos y pagos en el banco.">
+      <option name="closed" value="true" />
+      <created>1707670437254</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1707670437254</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Mejoras en semillas, banco y herramientas.">
+      <option name="closed" value="true" />
+      <created>1707884374358</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1707884374358</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Trabajo alternativo adicionado, arreglado.">
+      <option name="closed" value="true" />
+      <created>1708482642689</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1708482642689</updated>
+    </task>
+    <task id="LOCAL-00043" summary="indice de criminalidad, trabajos adicionales, semillas.">
+      <option name="closed" value="true" />
+      <created>1708568103160</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1708568103160</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Corrección en cultivos.">
+      <option name="closed" value="true" />
+      <created>1708574480907</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1708574480907</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Variables al archivo de configuración con propiedades.">
+      <option name="closed" value="true" />
+      <created>1708739195057</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1708739195057</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Componente base emocional actualizado">
+      <option name="closed" value="true" />
+      <created>1709133914964</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1709133914964</updated>
+    </task>
+    <task id="LOCAL-00047" summary="ignorar los jar compilados">
+      <option name="closed" value="true" />
+      <created>1709133959948</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1709133959949</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Ajustes a nombres y optimización de velocidad">
+      <option name="closed" value="true" />
+      <created>1710268536991</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1710268536991</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Ajustes a nombres y optimización de velocidad">
+      <option name="closed" value="true" />
+      <created>1710268588287</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1710268588287</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Ajustes a nombres y optimización de velocidad">
+      <option name="closed" value="true" />
+      <created>1710269798169</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1710269798169</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Ajustes a nombres y optimización de velocidad">
+      <option name="closed" value="true" />
+      <created>1710269998838</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1710269998838</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Ajustes al mecanismo de rescate del corazón de la familia campesina y sincronización.">
+      <option name="closed" value="true" />
+      <created>1710371209371</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1710371209371</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Cambio de nombres a los agentes y demás componentes">
+      <option name="closed" value="true" />
+      <created>1710439118818</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1710439118819</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Ajustado el cambio de precios del mercado, ahora parece que funciona completamente y ajusta según la oferta y demanda, rondando al precio inicial.">
+      <option name="closed" value="true" />
+      <created>1710729640907</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1710729640907</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Ajustada la simulación con 8 agentes para las pruebas">
+      <option name="closed" value="true" />
+      <created>1710802496833</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1710802496833</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Tarea vacía para recuperar los agentes zombies">
+      <option name="closed" value="true" />
+      <created>1710819495244</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1710819495244</updated>
+    </task>
+    <task id="LOCAL-00057" summary="ajuste en los temporizadores para simulación a 10 años.">
+      <option name="closed" value="true" />
+      <created>1710943246188</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1710943246189</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Ajustes al simulador para el avance del tiempo de forma coherente.">
+      <option name="closed" value="true" />
+      <created>1711044449000</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1711044449000</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Avance y restricción del tiempo de forma correcta.">
+      <option name="closed" value="true" />
+      <created>1711083208692</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1711083208693</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Se han minimizado los errores de plantar, cultivar y recolectar.">
+      <option name="closed" value="true" />
+      <created>1711296785426</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1711296785430</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Se cambió la escala del tiempo a minutos.">
+      <option name="closed" value="true" />
+      <created>1711312056125</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1711312056126</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Prestamos y pagos vuelven a funcionar.">
+      <option name="closed" value="true" />
+      <created>1711395999583</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1711395999583</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Prestamos y pagos vuelven a funcionar.">
+      <option name="closed" value="true" />
+      <created>1711407252022</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1711407252022</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Simulador funcional. Ejecutando pruebas para ajustes.">
+      <option name="closed" value="true" />
+      <created>1711942829424</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1711942829425</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Ahora el terreno se destruye al vender el cultivo y da espacio a que los agentes se refresquen, parece funcionar mejor este enfoque.">
+      <option name="closed" value="true" />
+      <created>1712091583315</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1712091583316</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Nueva versión del simulador funcionado. ya se registran las perturbaciones en un archivo para su análisis.">
+      <option name="closed" value="true" />
+      <created>1712271322191</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1712271322192</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Evaluador Fuzzy para varias metas">
+      <option name="closed" value="true" />
+      <created>1712290869689</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1712290869689</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Versión usada para validación">
+      <option name="closed" value="true" />
+      <created>1717079472567</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1717079472567</updated>
+    </task>
+    <task id="LOCAL-00069" summary="cierre en modo single">
+      <option name="closed" value="true" />
+      <created>1717246628471</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1717246628471</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Ya es posible ejecutarlo por línea de comandos para experimentos.">
+      <option name="closed" value="true" />
+      <created>1717300351362</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1717300351362</updated>
+    </task>
+    <task id="LOCAL-00071" summary="script no dinamico para ejecución see xperimentos">
+      <option name="closed" value="true" />
+      <created>1717369293008</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1717369293008</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Experimentos para el CCC18">
+      <option name="closed" value="true" />
+      <created>1718166943244</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1718166943244</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Training de las familias campesinas funcional.">
+      <option name="closed" value="true" />
+      <created>1720013883946</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1720013883946</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Modo distribuido">
+      <option name="closed" value="true" />
+      <created>1721079999424</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1721079999425</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Modo distribuido y con finalización sincronizada">
+      <option name="closed" value="true" />
+      <created>1722482110655</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1722482110656</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Sincronización entre Contratista y Empleado">
+      <option name="closed" value="true" />
+      <created>1722534858676</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1722534858677</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Ajustes para enlazar SonarCloud">
+      <option name="closed" value="true" />
+      <created>1723682431002</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1723682431002</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Testing Sonar">
+      <option name="closed" value="true" />
+      <created>1723684615169</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1723684615169</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Corregido parcialmente el WebMode:&#10;java -jar wpsim-1.0.jar --env local --mode web --money 750000 --land 2 --personality 0.0 --tools 20 --seeds 50 --water 0 --irrigation 0 --emotions 1 --training 0 --agents 5">
+      <option name="closed" value="true" />
+      <created>1723955390514</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1723955390515</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Funciona por defecto como web">
+      <option name="closed" value="true" />
+      <created>1724119569357</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1724119569357</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Funciona por defecto como web">
+      <option name="closed" value="true" />
+      <created>1742165587096</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1742165587096</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Configuración hilos bajos, fuzzy bajo.">
+      <option name="closed" value="true" />
+      <created>1742180602824</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1742180602824</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="NoPeriodicGuard" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Tarea vacía para recuperar los agentes zombies" />
+    <MESSAGE value="ajuste en los temporizadores para simulación a 10 años." />
+    <MESSAGE value="Ajustes al simulador para el avance del tiempo de forma coherente." />
+    <MESSAGE value="Avance y restricción del tiempo de forma correcta." />
+    <MESSAGE value="Se han minimizado los errores de plantar, cultivar y recolectar." />
+    <MESSAGE value="Se cambió la escala del tiempo a minutos." />
+    <MESSAGE value="Prestamos y pagos vuelven a funcionar." />
+    <MESSAGE value="Simulador funcional. Ejecutando pruebas para ajustes." />
+    <MESSAGE value="Ahora el terreno se destruye al vender el cultivo y da espacio a que los agentes se refresquen, parece funcionar mejor este enfoque." />
+    <MESSAGE value="Nueva versión del simulador funcionado. ya se registran las perturbaciones en un archivo para su análisis." />
+    <MESSAGE value="Evaluador Fuzzy para varias metas" />
+    <MESSAGE value="Versión usada para validación" />
+    <MESSAGE value="cierre en modo single" />
+    <MESSAGE value="Ya es posible ejecutarlo por línea de comandos para experimentos." />
+    <MESSAGE value="script no dinamico para ejecución see xperimentos" />
+    <MESSAGE value="Experimentos para el CCC18" />
+    <MESSAGE value="Training de las familias campesinas funcional." />
+    <MESSAGE value="Modo distribuido" />
+    <MESSAGE value="Modo distribuido y con finalización sincronizada" />
+    <MESSAGE value="Sincronización entre Contratista y Empleado" />
+    <MESSAGE value="Ajustes para enlazar SonarCloud" />
+    <MESSAGE value="Testing Sonar" />
+    <MESSAGE value="Corregido parcialmente el WebMode:&#10;java -jar wpsim-1.0.jar --env local --mode web --money 750000 --land 2 --personality 0.0 --tools 20 --seeds 50 --water 0 --irrigation 0 --emotions 1 --training 0 --agents 5" />
+    <MESSAGE value="Funciona por defecto como web" />
+    <MESSAGE value="Configuración hilos bajos, fuzzy bajo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuración hilos bajos, fuzzy bajo." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/wpsim/PerturbationGenerator/PeriodicGuards/NaturalPhenomena.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
