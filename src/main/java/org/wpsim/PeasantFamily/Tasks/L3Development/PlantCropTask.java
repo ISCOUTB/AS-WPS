@@ -119,10 +119,14 @@ public class PlantCropTask extends wpsLandTask {
                     } catch (TimeoutException e) {
                         future.cancel(true);
                         return;
-                    } catch (InterruptedException | ExecutionException e) {
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
                         //ReportBESA.info(peasantAlias + " no alcanzó a crear la tierrita nueva " + currentLandInfo.getLandName());
                         return;
-                    }
+                    } catch (ExecutionException e) {
+                        //ReportBESA.info(peasantAlias + " no alcanzó a crear la tierrita nueva " + currentLandInfo.getLandName());
+                        return;
+                    }    
                     try {
                         AdmBESA.getInstance().getHandlerByAlias(
                                 currentLandInfo.getLandName()

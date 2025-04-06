@@ -59,6 +59,9 @@ public class DeadAgentGuard extends GuardBESA {
                 );
                 System.out.println("UPDATE: mensaje enviado desde " + wpsStart.params.mode);
                 Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                Thread.currentThread().interrupt();
+                System.err.println("UPDATE: " + ex.getMessage() + " wpsmain");
             } catch (Exception ex) {
                 System.err.println("UPDATE: " + ex.getMessage() + "wpsmain");
             }

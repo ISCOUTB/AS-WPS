@@ -318,6 +318,7 @@ public class wpsStart {
         try {
             Thread.sleep(milis);
         } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
             throw new RuntimeException(e);
         }
     }

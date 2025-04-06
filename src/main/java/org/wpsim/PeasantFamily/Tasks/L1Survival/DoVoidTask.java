@@ -52,6 +52,7 @@ public class DoVoidTask extends Task {
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
             throw new RuntimeException(e);
         }
         //wpsReport.info("Adelantado " + believes.getAlias() + " esperando 50 ms", believes.getAlias());
