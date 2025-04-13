@@ -152,7 +152,7 @@ public class PeasantFamilyProfile implements Serializable, Cloneable {
     /**
      * @return
      */
-    public int getPesticidesAvailable() {
+    public synchronized int getPesticidesAvailable() {
         return pesticidesAvailable;
     }
 
