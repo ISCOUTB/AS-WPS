@@ -159,7 +159,7 @@ public class PeasantFamilyProfile implements Serializable, Cloneable {
     /**
      * @param pesticidesAvailable
      */
-    public void setPesticidesAvailable(int pesticidesAvailable) {
+    public synchronized void setPesticidesAvailable(int pesticidesAvailable) {
         this.pesticidesAvailable = pesticidesAvailable;
     }
 
