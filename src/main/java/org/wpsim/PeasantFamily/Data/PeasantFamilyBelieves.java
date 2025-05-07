@@ -607,10 +607,33 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
     /**
      * @return @throws CloneNotSupportedException
      */
-    @Override
-    public Believes clone() throws CloneNotSupportedException {
-        return this;
+    public class Believes {
+    // existing fields...
+
+    public Believes(Believes original) {
+        this.peasantProfile = original.peasantProfile;
+        this.currentDay = original.currentDay;
+        this.timeLeftOnDay = original.timeLeftOnDay;
+        this.newDay = original.newDay;
+        this.internalCurrentDate = original.internalCurrentDate;
+        this.currentSeason = original.currentSeason;
+        this.robberyAccount = original.robberyAccount;
+        this.toPay = original.toPay;
+        this.currentPeasantActivityType = original.currentPeasantActivityType;
+        this.currentMoneyOrigin = original.currentMoneyOrigin;
+        this.currentResourceNeededType = original.currentResourceNeededType;
+        this.currentPeasantLeisureType = original.currentPeasantLeisureType;
+        this.priceList = new HashMap<>(original.priceList);
+        this.peasantFamilyHelper = original.peasantFamilyHelper;
+        this.wait = original.wait;
+        this.updatePriceList = original.updatePriceList;
+        this.loanDenied = original.loanDenied;
+        this.daysToWorkForOther = original.daysToWorkForOther;
+        this.taskLog = new HashMap<>(original.taskLog);
+        // Copiar emociones y otras estructuras si es necesario
     }
+    }
+
 
     /**
      * @return
