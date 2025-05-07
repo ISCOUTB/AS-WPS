@@ -70,6 +70,7 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
         this.daysToWorkForOther = original.getDaysToWorkForOther();
         this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());        
     }
+    @SuppressWarnings("java:S2975")
     @Override
 public PeasantFamilyBelieves clone() {
     return new PeasantFamilyBelieves(this);
