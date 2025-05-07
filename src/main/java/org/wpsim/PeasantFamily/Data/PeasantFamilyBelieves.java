@@ -70,14 +70,10 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
         this.daysToWorkForOther = original.getDaysToWorkForOther();
         this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());        
     }
-    @SuppressWarnings("java:S2975")
     @Override
 public PeasantFamilyBelieves clone() {
     return new PeasantFamilyBelieves(this);
 }
-
-
-
     private PeasantFamilyProfile peasantProfile;
     private SeasonType currentSeason;
     private MoneyOriginType currentMoneyOrigin;
@@ -109,18 +105,15 @@ public PeasantFamilyBelieves clone() {
     private double personality;
     private double trainingLevel;
     private boolean trainingAvailable;
-
     /**
      * @param alias          Peasant Family Alias
      * @param peasantProfile profile of the peasant family
      */
     public PeasantFamilyBelieves(String alias, PeasantFamilyProfile peasantProfile) {
         this.setPeasantProfile(peasantProfile);
-
         this.internalCurrentDate = ControlCurrentDate.getInstance().getCurrentDate();
         this.peasantProfile.setPeasantFamilyAlias(alias);
         this.taskLog.clear();
-
         this.currentDay = 1;
         this.timeLeftOnDay = 1440;
         this.haveLoan = false;
@@ -131,91 +124,70 @@ public PeasantFamilyBelieves clone() {
         this.ptwDate = "";
         this.peasantFamilyHelper = "";
         this.Contractor = "";
-
         this.currentMoneyOrigin = MoneyOriginType.NONE;
         this.currentPeasantActivityType = PeasantActivityType.NONE;
         this.currentPeasantLeisureType = PeasantLeisureType.NONE;
         this.setHaveEmotions(params.emotions == 1);
-
         if (params.personality != -1.0) {
             this.setPersonality(params.personality);
         } else {
             this.setPersonality(0.0);
         }
-
         if (params.training == 1) {
             this.trainingLevel = wpsStart.config.getDoubleProperty("trainingLevel");
         } else {
             this.trainingLevel = 0.4;
         }
-
         changePersonalityBase(getPersonality());
-
     }
-
     public boolean isTrainingAvailable() {
         return trainingAvailable;
     }
-
     public void setTrainingAvailable(boolean trainingAvailable) {
         this.trainingAvailable = trainingAvailable;
     }
-
     public double getTrainingLevel() {
         return trainingLevel;
     }
-
     public boolean shouldUpdatePriceList() {
         return updatePriceList;
     }
-
     public void setEmotionsList(List<EmotionAxis> emotionsList) {
         this.emotionsList = emotionsList;
     }
         
-
     public void increaseTrainingLevel() {
         trainingLevel += 0.1;
         setTrainingAvailable(false);
     }
-
     public boolean isHaveEmotions() {
         return haveEmotions;
     }
-
     public void setHaveEmotions(boolean haveEmotions) {
         this.haveEmotions = haveEmotions;
     }
-
     public boolean isAskedForContractor() {
         return askedForContractor;
     }
-
     public void setAskedForContractor(boolean askedForContractor) {
         this.askedForContractor = askedForContractor;
     }
-
     public String getContractor() {
         return Contractor;
     }
-
     public void setContractor(String peasantFamilyToHelp) {
         this.Contractor = peasantFamilyToHelp;
     }
-
     public boolean isWorkerWithoutLand() {
         return workerWithoutLand;
     }
-
     public void setWorkerWithoutLand() {
         this.workerWithoutLand = true;
         peasantProfile.setPurpose("worker");
     }
-
     public List<LandInfo> getAssignedLands() {
         return assignedLands;
     }
-
     /**
      * Establece los terrenos asignados a partir de un mapa proporcionado.
      * Limpia la lista actual y la llena con objetos LandInfo basados en las entradas del mapa.
@@ -226,9 +198,7 @@ public PeasantFamilyBelieves clone() {
         if (lands == null) {
             return;
         }
-
         List<LandInfo> newAssignedLands = new ArrayList<>();
-
         for (Map.Entry<String, String> entry : lands.entrySet()) {
             newAssignedLands.add(
                     new LandInfo(
@@ -239,12 +209,9 @@ public PeasantFamilyBelieves clone() {
                     )
             );
         }
-
         this.assignedLands.clear();
         this.assignedLands.addAll(newAssignedLands);
     }
-
-
     /**
      * Actualiza la información del terreno en la lista.
      * Si el terreno con el mismo nombre ya existe en la lista, se actualiza con la nueva información.
@@ -256,7 +223,6 @@ public PeasantFamilyBelieves clone() {
         assignedLands.remove(newLandInfo);
         assignedLands.add(newLandInfo);
     }
-
     /**
      * Verifica si hay algún terreno disponible en la lista que no sea de tipo "water" y no esté en uso.
      * Imprime información sobre cada terreno durante la verificación.
@@ -271,7 +237,6 @@ public PeasantFamilyBelieves clone() {
         }
         return false;
     }
-
     /**
      * Busca y devuelve un terreno disponible en la lista que no sea de tipo "water" y no esté en uso.
      * El terreno devuelto se marca como usado.
@@ -288,8 +253,6 @@ public PeasantFamilyBelieves clone() {
         }
         return false;
     }
-
-
     public synchronized LandInfo getLandInfo(String landName) {
         for (LandInfo landInfo : assignedLands) {
             if (landInfo.getLandName().equals(landName)) {
@@ -298,7 +261,6 @@ public PeasantFamilyBelieves clone() {
         }
         return null;
     }
-
     /**
      * Establece la temporada actual para un terreno específico basado en su nombre.
      * Si se encuentra el terreno en la lista, se actualiza su temporada.
@@ -314,15 +276,12 @@ public PeasantFamilyBelieves clone() {
         this.currentSeason = currentSeason;
         this.currentSeason = currentSeason;
     }
-
     public void setCurrentLandKind(String landName, String currentKind) {
         LandInfo landInfo = getLandInfo(landName);
         if (landInfo != null) {
             landInfo.setKind(currentKind);
         }
     }
-
-
     /**
      * Sets the current crop care type for the specified land.
      *
@@ -333,7 +292,6 @@ public PeasantFamilyBelieves clone() {
         LandInfo landInfo = getLandInfo(landName);
         landInfo.setCurrentCropCareType(currentCropCareType);
     }
-
     /**
      * Adds a task to the log for the specified date.
      *
@@ -346,7 +304,6 @@ public PeasantFamilyBelieves clone() {
         String taskName = parts[parts.length - 1];
         taskLog.computeIfAbsent(date, k -> ConcurrentHashMap.newKeySet()).add(taskName);
     }
-
     public void addTaskToLog(String date, String landName) {
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
         String fullClassName = stackTraceElements[2].getClassName();
@@ -355,7 +312,6 @@ public PeasantFamilyBelieves clone() {
         taskLog.computeIfAbsent(date, k -> ConcurrentHashMap.newKeySet()).add(taskName);
         taskLog.computeIfAbsent(date, k -> ConcurrentHashMap.newKeySet()).add(taskName + landName);
     }
-
     /**
      * Checks if the specified task was executed on the specified date.
      *
@@ -368,79 +324,65 @@ public PeasantFamilyBelieves clone() {
         //System.out.println(tasks + " " + taskName + " on " + date + " r " + tasks.contains(taskName));
         return tasks.contains(taskName);
     }
-
     public boolean isTaskExecutedOnDateWithLand(String date, String taskName, String landName) {
         Set<String> tasks = taskLog.getOrDefault(date, new HashSet<>());
         //ReportBESA.info(tasks + " " + (taskName+landName) + " on " + date + " r " + tasks.contains(taskName+landName));
         return tasks.contains(taskName + landName);
     }
-
     public boolean isHaveLoan() {
         return haveLoan;
     }
-
     public void setHaveLoan(boolean haveLoan) {
         this.haveLoan = haveLoan;
     }
-
     public int getRobberyAccount() {
         return robberyAccount;
     }
-
     public void increaseRobberyAccount() {
         this.robberyAccount++;
     }
-
     public String getPtwDate() {
         return ptwDate;
     }
-
     public void setPtwDate(String ptwDate) {
         this.ptwDate = ptwDate;
     }
-
     /**
      * @return
      */
     public int getCurrentDay() {
         return currentDay;
     }
-
     /**
      * @param currentDay
      */
     public void setCurrentDay(int currentDay) {
         this.currentDay = currentDay;
     }
-
     /**
      * @return
      */
     public double getTimeLeftOnDay() {
         return timeLeftOnDay;
     }
-
     /**
      * @param timeLeftOnDay
      */
     public void setTimeLeftOnDay(double timeLeftOnDay) {
         this.timeLeftOnDay = timeLeftOnDay;
     }
-
     /**
      * @return
      */
     public String getInternalCurrentDate() {
         return internalCurrentDate;
     }
-
     /**
      * @param internalCurrentDate
      */
     public void setInternalCurrentDate(String internalCurrentDate) {
         this.internalCurrentDate = internalCurrentDate;
     }
-
     /**
      * Time unit defined by hours spent on activities.
      *
@@ -459,7 +401,6 @@ public PeasantFamilyBelieves clone() {
             decreaseTime(time);
         }
     }
-
     /**
      * Make variable reset Every Day and increment date
      */
@@ -468,7 +409,6 @@ public PeasantFamilyBelieves clone() {
         this.timeLeftOnDay = 1440;
         this.newDay = true;
         this.internalCurrentDate = ControlCurrentDate.getInstance().getDatePlusOneDay(internalCurrentDate);
-
         notifyInternalCurrentDay();
         if (ControlCurrentDate.getInstance().isFirstDayOfWeek(internalCurrentDate)) {
             // Report the agent's beliefs to the wpsViewer
@@ -477,7 +417,6 @@ public PeasantFamilyBelieves clone() {
             wpsReport.mental(Instant.now() + "," + this.toCSV(), this.getAlias());
         }
     }
-
     private void notifyInternalCurrentDay() {
         // Update the internal current date
         try {
@@ -926,4 +865,5 @@ public PeasantFamilyBelieves clone() {
         this.personality = personality;
     }
 }
+
 
