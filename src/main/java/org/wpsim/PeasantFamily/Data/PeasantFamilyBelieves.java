@@ -49,6 +49,33 @@ import static org.wpsim.WellProdSim.wpsStart.params;
  * @author jairo
  */
 public class PeasantFamilyBelieves extends EmotionalComponent implements Believes {
+    public PeasantFamilyBelieves(PeasantFamilyBelieves original) {
+        this.peasantProfile = original.getPeasantProfile();
+        this.currentDay = original.getCurrentDay();
+        this.timeLeftOnDay = original.getTimeLeftOnDay();
+        this.newDay = original.isNewDay();
+        this.internalCurrentDate = original.getInternalCurrentDate();
+        this.currentSeason = original.getCurrentSeason();
+        this.robberyAccount = original.getRobberyAccount();
+        this.toPay = original.getToPay();
+        this.currentPeasantActivityType = original.getCurrentActivity();
+        this.currentMoneyOrigin = original.getCurrentMoneyOrigin();
+        this.currentResourceNeededType = original.getCurrentResourceNeededType();
+        this.currentPeasantLeisureType = original.getCurrentPeasantLeisureType();
+        this.priceList = new HashMap<>(original.getPriceList());
+        this.peasantFamilyHelper = original.getPeasantFamilyHelper();
+        this.wait = original.isWaiting();
+        this.updatePriceList = original.shouldUpdatePriceList(); // Asegúrate de tener este getter
+        this.loanDenied = original.isLoanDenied();
+        this.daysToWorkForOther = original.getDaysToWorkForOther();
+        this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());
+    }
+    @Override
+    public Believes clone() {
+        return new PeasantFamilyBelieves(this); // Usa el constructor de copia que ya creaste
+    }
+    
+
 
     private PeasantFamilyProfile peasantProfile;
     private SeasonType currentSeason;
@@ -57,6 +84,7 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
     private PeasantLeisureType currentPeasantLeisureType;
     private ResourceNeededType currentResourceNeededType;
     private List<LandInfo> assignedLands = new CopyOnWriteArrayList<>();
+    private List<EmotionAxis> emotionsList;
     private int currentDay;
     private int robberyAccount;
     private double timeLeftOnDay;
@@ -135,6 +163,15 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
     public double getTrainingLevel() {
         return trainingLevel;
     }
+
+    public boolean shouldUpdatePriceList() {
+        return updatePriceList;
+    }
+
+    public void setEmotionsList(List<EmotionAxis> emotionsList) {
+        this.emotionsList = emotionsList;
+    }
+        
 
     public void increaseTrainingLevel() {
         trainingLevel += 0.1;
@@ -602,36 +639,6 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
                 processEmotionalEvent(new EmotionalEvent("FAMILY", "PLANTINGFAILED", "MONEY"));
             }
         }
-    }
-
-    /**
-     * @return @throws CloneNotSupportedException
-     */
-    public class Believes {
-    // existing fields...
-
-    public Believes(Believes original) {
-        this.peasantProfile = original.peasantProfile;
-        this.currentDay = original.currentDay;
-        this.timeLeftOnDay = original.timeLeftOnDay;
-        this.newDay = original.newDay;
-        this.internalCurrentDate = original.internalCurrentDate;
-        this.currentSeason = original.currentSeason;
-        this.robberyAccount = original.robberyAccount;
-        this.toPay = original.toPay;
-        this.currentPeasantActivityType = original.currentPeasantActivityType;
-        this.currentMoneyOrigin = original.currentMoneyOrigin;
-        this.currentResourceNeededType = original.currentResourceNeededType;
-        this.currentPeasantLeisureType = original.currentPeasantLeisureType;
-        this.priceList = new HashMap<>(original.priceList);
-        this.peasantFamilyHelper = original.peasantFamilyHelper;
-        this.wait = original.wait;
-        this.updatePriceList = original.updatePriceList;
-        this.loanDenied = original.loanDenied;
-        this.daysToWorkForOther = original.daysToWorkForOther;
-        this.taskLog = new HashMap<>(original.taskLog);
-        // Copiar emociones y otras estructuras si es necesario
-    }
     }
 
 
