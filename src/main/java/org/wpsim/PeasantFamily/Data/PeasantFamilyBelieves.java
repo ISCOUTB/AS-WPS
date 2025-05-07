@@ -68,13 +68,13 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
         this.updatePriceList = original.shouldUpdatePriceList(); // Asegúrate de tener este getter
         this.loanDenied = original.isLoanDenied();
         this.daysToWorkForOther = original.getDaysToWorkForOther();
-        this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());
+        this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());        
     }
     @Override
-    public Believes clone() {
-        return new PeasantFamilyBelieves(this); // Usa el constructor de copia que ya creaste
-    }
-    
+public PeasantFamilyBelieves clone() {
+    return new PeasantFamilyBelieves(this);
+}
+
 
 
     private PeasantFamilyProfile peasantProfile;
