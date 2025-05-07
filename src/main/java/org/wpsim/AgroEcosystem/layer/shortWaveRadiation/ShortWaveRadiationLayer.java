@@ -26,7 +26,7 @@ public class ShortWaveRadiationLayer extends SimWorldSimpleLayer<ShortWaveRadiat
 
     private int latitudeDegrees;
 
-    private WorldConfiguration worldConfig = WorldConfiguration.getPropsInstance();
+    private WorldConfiguration shortWaveWorldConfig = WorldConfiguration.getPropsInstance();
 
     /**
      *
@@ -70,7 +70,7 @@ public class ShortWaveRadiationLayer extends SimWorldSimpleLayer<ShortWaveRadiat
                     new ShortWaveRadiationCellState(nextShortWaveRadiationRate)
             );
         } else {
-            DateTimeFormatter dtfOut = DateTimeFormat.forPattern(this.worldConfig.getProperty("date.format"));
+            DateTimeFormatter dtfOut = DateTimeFormat.forPattern(this.shortWaveWorldConfig.getProperty("date.format"));
             int daysBetweenLastDataAndNewEvent = DateHelper.differenceDaysBetweenTwoDates(this.cell.getDate(), params1.getDate());
             for (int i = 0; i < daysBetweenLastDataAndNewEvent; i++) {
                 DateTime previousStateDate = DateHelper.getDateInJoda(this.cell.getDate());
