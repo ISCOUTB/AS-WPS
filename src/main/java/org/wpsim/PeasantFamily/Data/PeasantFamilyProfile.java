@@ -22,7 +22,6 @@ import java.io.Serializable;
  * @author jairo
  */
 public class PeasantFamilyProfile implements Serializable, Cloneable {
-
     private String purpose;
     private String peasantKind;
     private String peasantFamilyAlias;
@@ -102,8 +101,82 @@ public class PeasantFamilyProfile implements Serializable, Cloneable {
     /**
      *
      */
-    public PeasantFamilyProfile() {
+    public PeasantFamilyProfile(PeasantFamilyProfile original) {
+        this.money = original.money;
+        this.initialMoney = original.initialMoney;
+        this.health = original.health;
+        this.initialHealth = original.initialHealth;
+        this.purpose = original.purpose;
+        this.peasantKind = original.peasantKind;
+        this.peasantFamilyAlias = original.peasantFamilyAlias;
+        this.peasantFamilyAffinity = original.peasantFamilyAffinity;
+        this.peasantLeisureAffinity = original.peasantLeisureAffinity;
+        this.peasantFriendsAffinity = original.peasantFriendsAffinity;
+        this.peasantFamilyLandAlias = original.peasantFamilyLandAlias;
+        this.worker = original.worker;
+        this.peasantQualityFactor = original.peasantQualityFactor;
+        this.liveStockAffinity = original.liveStockAffinity;
+        this.farmName = original.farmName;
+        this.cropSize = original.cropSize;
+        this.housing = original.housing;
+        this.servicesPresence = original.servicesPresence;
+        this.housingSize = original.housingSize;
+        this.housingCondition = original.housingCondition;
+        this.housingLocation = original.housingLocation;
+        this.farmDistance = original.farmDistance;
+        this.totalIncome = original.totalIncome;
+        this.loanAmountToPay = original.loanAmountToPay;
+        this.housingQuailty = original.housingQuailty;
+        this.timeSpentOnMaintenance = original.timeSpentOnMaintenance;
+        this.cropHealth = original.cropHealth;
+        this.farmReady = original.farmReady;
+        this.harvestedWeightExpected = original.harvestedWeightExpected;
+        this.processedCrop = original.processedCrop;
+        this.cropEficiency = original.cropEficiency;
+        this.processedWeight = original.processedWeight;
+        this.processingTime = original.processingTime;
+        this.trainingLevel = original.trainingLevel;
+        this.trainingAvailability = original.trainingAvailability;
+        this.trainingRelevance = original.trainingRelevance;
+        this.trainingCost = original.trainingCost;
+        this.irrigation = original.irrigation;
+        this.irrigationTime = original.irrigationTime;
+        this.pestControl = original.pestControl;
+        this.diseasedCrop = original.diseasedCrop;
+        this.weedControl = original.weedControl;
+        this.infestedCrop = original.infestedCrop;
+        this.suppliesAvailability = original.suppliesAvailability;
+        this.toolsAvailability = original.toolsAvailability;
+        this.associated = original.associated;
+        this.neighbors = original.neighbors;
+        this.collaborationValue = original.collaborationValue;
+        this.healthProgramsAvailability = original.healthProgramsAvailability;
+        this.livestockFarming = original.livestockFarming;
+        this.livestockHealth = original.livestockHealth;
+        this.livestockNumber = original.livestockNumber;
+        this.familyTime = original.familyTime;
+        this.familyTimeAvailability = original.familyTimeAvailability;
+        this.communications = original.communications;
+        this.socialCompatibility = original.socialCompatibility;
+        this.restingTimeAvailibility = original.restingTimeAvailibility;
+        this.peasantRestAffinity = original.peasantRestAffinity;
+        this.leisureOptions = original.leisureOptions;
+        this.sellDone = original.sellDone;
+        this.socialAffinity = original.socialAffinity;
+        this.waterAvailable = original.waterAvailable;
+        this.pesticidesAvailable = original.pesticidesAvailable;
+        this.tools = original.tools;
+        this.supplies = original.supplies;
+        this.riceSeedsByHectare = original.riceSeedsByHectare;
+        this.seeds = original.seeds;
+        this.harvestedWeight = original.harvestedWeight;
+        this.totalHarvestedWeight = original.totalHarvestedWeight;
+        this.seedsNeeded = original.seedsNeeded;
+        this.toolsNeeded = original.toolsNeeded;
+        this.criminalityAffinity = original.criminalityAffinity;
+        this.minimumVital = original.minimumVital;
     }
+    
     public double getSocialAffinity() {
         return socialAffinity;
     }
@@ -1252,15 +1325,6 @@ public synchronized double getPeasantQualityFactor() {
      */
     public void decreaseHealth() {
         this.health -= 5;
-    }
-
-    @Override
-    public PeasantFamilyProfile clone() {
-        try {
-            return (PeasantFamilyProfile) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
     }
 
     public void increaseTotalHarvestedWeight(double harvested) {
