@@ -3,8 +3,9 @@ package org.wpsim.SimulationControl.Data;
 import java.util.Random;
 
 public class Coin {
+    private static final Random RANDOM = new Random();
+
     public static boolean flipCoin() {
-        Random random = new Random();
-        return random.nextBoolean();
+        return RANDOM.nextBoolean();
     }
 }
