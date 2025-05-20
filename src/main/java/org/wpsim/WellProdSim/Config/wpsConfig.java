@@ -34,6 +34,8 @@ import static org.wpsim.WellProdSim.wpsStart.params;
 public final class wpsConfig {
 
     private static final wpsConfig INSTANCE = new wpsConfig();
+    private static final Random RANDOM = new Random();
+
     private String SocietyAgentName;
     private String BankAgentName;
     private String MarketAgentName;
@@ -52,20 +54,13 @@ public final class wpsConfig {
     private PeasantFamilyProfile thrivingFarmerProfile;
     private int smlv;
 
-    /**
-     *
-     */
     private wpsConfig() {
         loadPeasantConfig();
         loadWPSConfig();
         this.peasantSerialID = 1;
         this.perturbation = "";
-
     }
 
-    /**
-     *
-     */
     public static wpsConfig getInstance() {
         return INSTANCE;
     }
@@ -97,6 +92,7 @@ public final class wpsConfig {
     public String getControlAgentName() {
         return ControlAgentName;
     }
+
     public void setControlAgentName(String name) {
         ControlAgentName = name;
     }
@@ -105,53 +101,35 @@ public final class wpsConfig {
         return this.ViewerAgentName;
     }
 
-    /**
-     * @return
-     */
     public PeasantFamilyProfile getDefaultPeasantFamilyProfile() {
         return defaultPeasantFamilyProfile.clone();
     }
 
-    /**
-     * @return
-     */
     public String getStartSimulationDate() {
         return startSimulationDate;
     }
 
-    /**
-     * @return
-     */
     public String getPerturbation() {
         return perturbation;
     }
 
-    /**
-     * @param perturbation
-     */
     public void setPerturbation(String perturbation) {
         this.perturbation = perturbation;
     }
 
     public Map<String, FarmingResource> loadMarketConfig() {
         Map<String, FarmingResource> priceList = new HashMap<>();
-
         try {
             String[] resourceNames = {
                     "water", "seeds", "pesticides",
                     "tools", "livestock", "rice", "roots"
             };
-
             for (String resourceName : resourceNames) {
                 priceList.put(resourceName,
                         new FarmingResource(
                                 resourceName,
-                                properties.getProperty(
-                                        "market." + resourceName + ".price"
-                                ),
-                                properties.getProperty(
-                                        "market." + resourceName + ".quantity"
-                                )
+                                properties.getProperty("market." + resourceName + ".price"),
+                                properties.getProperty("market." + resourceName + ".quantity")
                         )
                 );
             }
@@ -163,7 +141,6 @@ public final class wpsConfig {
     }
 
     private void loadWPSConfig() {
-        // @TODO: Incluir todas las config del wpsStart
         try {
             properties.load(loadFileAsStream("wpsConfig.properties"));
             this.startSimulationDate = properties.getProperty("control.startdate");
@@ -184,7 +161,6 @@ public final class wpsConfig {
         LoadSettings settings = LoadSettings.builder().build();
         Load load = new Load(settings);
         Map<String, Object> data;
-
         String jsonData;
         String yamlContent;
         Gson gson = new Gson();
@@ -210,30 +186,28 @@ public final class wpsConfig {
             if (file.exists()) {
                 inputStream = new FileInputStream(file);
             } else {
-                throw new FileNotFoundException("No se pudo encontrar " + fileName + " ni dentro del JAR ni en el sistema de archivos");
+                throw new FileNotFoundException(
+                        "No se pudo encontrar " + fileName + " ni dentro del JAR ni en el sistema de archivos"
+                );
             }
         }
         return inputStream;
     }
 
-
     public String loadFile(String fileName) {
         InputStream inputStream = null;
         try {
-            // Intentar cargar desde dentro del JAR
             inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
-
-            // Si no se encuentra dentro del JAR, intentar cargarlo desde el sistema de archivos
             if (inputStream == null) {
                 File file = new File(fileName);
                 if (file.exists()) {
                     inputStream = new FileInputStream(file);
                 } else {
-                    throw new FileNotFoundException("No se pudo encontrar " + fileName + " ni dentro del JAR ni en el sistema de archivos");
+                    throw new FileNotFoundException(
+                            "No se pudo encontrar " + fileName + " ni dentro del JAR ni en el sistema de archivos"
+                    );
                 }
             }
-
-            // Convertir InputStream a String
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             StringBuilder stringBuilder = new StringBuilder();
             String line;
@@ -241,7 +215,6 @@ public final class wpsConfig {
                 stringBuilder.append(line).append("\n");
             }
             return stringBuilder.toString();
-
         } catch (IOException e) {
             System.out.println(e.getMessage() + " no encontré loadFile");
             ReportBESA.error(e);
@@ -258,16 +231,12 @@ public final class wpsConfig {
         }
     }
 
-
     private double generateRandomNumber(double min, double max) {
-        Random random = new Random();
-        return min + (max - min) * random.nextDouble();
+        return min + (max - min) * RANDOM.nextDouble();
     }
 
     public PeasantFamilyProfile getFarmerProfile() {
-
         PeasantFamilyProfile pfProfile = this.getDefaultPeasantFamilyProfile();
-
         double rnd = 1 + generateRandomNumber(
                 getDoubleProperty("pfagent.variance") * -1,
                 getDoubleProperty("pfagent.variance")
@@ -304,10 +273,11 @@ public final class wpsConfig {
         pfProfile.setPeasantFriendsAffinity(pfProfile.getPeasantFriendsAffinity() * rnd);
         pfProfile.setPeasantLeisureAffinity(pfProfile.getPeasantLeisureAffinity() * rnd);
         pfProfile.setSocialAffinity(pfProfile.getSocialAffinity() * rnd);
-        pfProfile.setMinimumVital(wpsStart.config.getIntProperty("pfagent.minimalVital") * rnd);
+        pfProfile.setMinimumVital(
+                wpsStart.config.getIntProperty("pfagent.minimalVital") * rnd
+        );
 
-        Random rand = new Random();
-        if (rand.nextInt(101) <= getIntProperty("society.criminality")) {
+        if (RANDOM.nextInt(101) <= getIntProperty("society.criminality")) {
             pfProfile.setCriminalityAffinity(true);
         }
 
@@ -315,7 +285,8 @@ public final class wpsConfig {
     }
 
     public synchronized String getUniqueFarmerName() {
-        return AdmBESA.getInstance().getConfigBESA().getAliasContainer() + "PeasantFamily" + peasantSerialID++;
+        return AdmBESA.getInstance().getConfigBESA().getAliasContainer()
+                + "PeasantFamily" + peasantSerialID++;
     }
 
     public String getGovernmentAgentName() {
@@ -347,7 +318,7 @@ public final class wpsConfig {
     }
 
     public long getLongProperty(String property) {
-        return Long.parseLong(properties.getProperty(property, "0.0"));
+        return Long.parseLong(properties.getProperty(property, "0"));
     }
 
     public void setViewerAgentName(String name) {
