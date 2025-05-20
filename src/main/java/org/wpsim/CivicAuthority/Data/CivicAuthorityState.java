@@ -22,6 +22,7 @@ import org.wpsim.WellProdSim.wpsStart;
 
 import java.awt.*;
 import java.io.Serializable;
+import java.security.SecureRandom;
 import java.util.*;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,7 +34,7 @@ import static org.wpsim.WellProdSim.wpsStart.params;
  */
 public class CivicAuthorityState extends StateBESA implements Serializable {
 
-    private static final Random RANDOM = new Random();
+    private static final SecureRandom RANDOM = new SecureRandom();
     private static final int GRID_SIZE = 70;
     /**
      * Map that contains the land ownership information.
@@ -62,7 +63,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
             JSONArray landsArray = new JSONArray(
                     Objects.requireNonNull(
                             wpsConfig.getInstance().loadFile(
-                                    "web/data/world." + params.world + ".json" // config.getStringProperty("government.world")
+                                    "web/data/world." + params.world + ".json"
                             )
                     )
             );
@@ -112,7 +113,6 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
     }
 
     private List<String> selectBlock(List<String> availableLands, int rows, int cols) {
-        // Recorrer cada punto posible como punto de inicio del bloque
         for (int y = 0; y <= GRID_SIZE - rows; y++) {
             for (int x = 0; x <= GRID_SIZE - cols; x++) {
                 Point startPoint = new Point(x, y);
@@ -254,11 +254,6 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
         return landOwnership;
     }
 
-    /**
-     * Return the land ownership map.
-     *
-     * @return
-     */
     @Override
     public String toString() {
         return "GovernmentAgentState{" +
