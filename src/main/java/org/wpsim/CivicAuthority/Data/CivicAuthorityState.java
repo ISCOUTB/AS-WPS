@@ -33,6 +33,7 @@ import static org.wpsim.WellProdSim.wpsStart.params;
  */
 public class CivicAuthorityState extends StateBESA implements Serializable {
 
+    private static final Random RANDOM = new Random();
     private static final int GRID_SIZE = 70;
     /**
      * Map that contains the land ownership information.
@@ -61,7 +62,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
             JSONArray landsArray = new JSONArray(
                     Objects.requireNonNull(
                             wpsConfig.getInstance().loadFile(
-                                    "web/data/world." + params.world + ".json" //config.getStringProperty("government.world")
+                                    "web/data/world." + params.world + ".json" // config.getStringProperty("government.world")
                             )
                     )
             );
@@ -83,7 +84,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
         createFarms();
 
         System.out.println("UPDATE: Farms created");
-        //System.out.println(farms);
+        // System.out.println(farms);
 
         // Contar fincas por tamaño
         long largeFarmsCount = farms.keySet().stream().filter(farmName -> farmName.contains("_large")).count();
@@ -157,8 +158,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
             return null;
         }
 
-        Random rand = new Random();
-        String selectedFarm = availableFarms.get(rand.nextInt(availableFarms.size()));
+        String selectedFarm = availableFarms.get(RANDOM.nextInt(availableFarms.size()));
 
         List<String> landsOfSelectedFarm = farms.get(selectedFarm);
         Map<String, String> landsWithKind = new HashMap<>();
@@ -170,7 +170,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
     }
 
     public void createFarms() {
-        List<String> availableLands = null;
+        List<String> availableLands;
         if (wpsStart.config.getBooleanProperty("pfagent.deforestation")) {
             availableLands = landOwnership.entrySet().stream()
                     .filter(e -> !e.getValue().getKind().equals("road") && e.getValue().getFarmName() == null)
@@ -186,23 +186,11 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
                     .collect(Collectors.toList());
         }
 
-        //System.out.println("Available lands: " + this);
-
         int farmId = 1;
-        boolean large = false, medium = false, small = false;
+        boolean large = params.land == 12;
+        boolean medium = params.land == 6;
+        boolean small = params.land == 2;
 
-        if (params.land == 12) {
-            large = true;
-        }
-        if (params.land == 6) {
-            medium = true;
-        }
-        if (params.land == 2) {
-            small = true;
-        }
-        //wpsStart.config.getBooleanProperty("pfagent.largefarms")
-
-        // Asignar fincas grandes
         if (large) {
             while (true) {
                 List<String> farmLands = selectBlock(availableLands, 3, 4);
@@ -214,7 +202,6 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
             }
         }
 
-        // Asignar fincas medianas wpsStart.config.getBooleanProperty("pfagent.mediumfarms")
         if (medium) {
             while (true) {
                 List<String> farmLands = selectBlock(availableLands, 2, 2);
@@ -226,7 +213,6 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
             }
         }
 
-        // Asignar fincas pequeñas wpsStart.config.getBooleanProperty("pfagent.smallfarms")
         if (small) {
             while (!availableLands.isEmpty()) {
                 List<String> farmLands = selectBlock(availableLands, 1, 2);
@@ -237,16 +223,11 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
                 farmId++;
             }
             // Lógica adicional para asignar tierras no asignadas a fincas pequeñas
-            while (!availableLands.isEmpty() && availableLands.size() >= 2) {
-                // Tomamos cualquier bloque de 2 tierras contiguas disponibles
+            while (availableLands.size() >= 2) {
                 List<String> farmLands = new ArrayList<>();
                 farmLands.add(availableLands.get(0));
                 farmLands.add(availableLands.get(1));
-
-                // Removemos esas tierras de availableLands
                 availableLands.removeAll(farmLands);
-
-                // Agregamos estas tierras a una finca pequeña
                 farms.put("farm_" + farmId + "_small", farmLands);
                 farmId++;
             }
@@ -267,7 +248,7 @@ public class CivicAuthorityState extends StateBESA implements Serializable {
     /**
      * Returns the land ownership map.
      *
-     * @return Map<String, String>
+     * @return Map<String, LandInfo>
      */
     public synchronized Map<String, LandInfo> getLandOwnership() {
         return landOwnership;
