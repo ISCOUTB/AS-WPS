@@ -28,6 +28,8 @@ import java.util.Random;
  */
 public class WasteTimeAndResourcesTask extends wpsTask {
 
+    private static final Random RANDOM = new Random();
+
     /**
      *
      * @param parameters Believes
@@ -35,11 +37,10 @@ public class WasteTimeAndResourcesTask extends wpsTask {
     @Override
     public void executeTask(Believes parameters) {
         this.setExecuted(false);
-        Random random = new Random();
         PeasantFamilyBelieves believes = (PeasantFamilyBelieves) parameters;
         believes.addTaskToLog(believes.getInternalCurrentDate());
         believes.useTime(believes.getTimeLeftOnDay());
-        believes.getPeasantProfile().useMoney(random.nextInt(100000));
+        believes.getPeasantProfile().useMoney(RANDOM.nextInt(100000));
         believes.setCurrentPeasantLeisureType(PeasantLeisureType.NONE);
         believes.processEmotionalEvent(new EmotionalEvent("FAMILY", "LEISURE", "MONEY"));
     }
