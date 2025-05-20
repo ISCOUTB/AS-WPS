@@ -33,7 +33,7 @@ public class ControlCurrentDate {
      *
      * @return
      */
-    public synchronized String getCurrentDate() {
+    public String getCurrentDate() {
         return this.currentDate;
     }
 
