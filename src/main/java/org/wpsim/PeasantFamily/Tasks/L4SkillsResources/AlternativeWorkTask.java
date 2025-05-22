@@ -1,17 +1,3 @@
-/**
- * ==========================================================================
- * __      __ _ __   ___  *    WellProdSim                                  *
- * \ \ /\ / /| '_ \ / __| *    @version 1.0                                 *
- * \ V  V / | |_) |\__ \ *    @since 2023                                  *
- * \_/\_/  | .__/ |___/ *                                                 *
- * | |          *    @author Jairo Serrano                        *
- * |_|          *    @author Enrique Gonzalez                     *
- * ==========================================================================
- * Social Simulator used to estimate productivity and well-being of peasant *
- * families. It is event oriented, high concurrency, heterogeneous time     *
- * management and emotional reasoning BDI.                                  *
- * ==========================================================================
- */
 package org.wpsim.PeasantFamily.Tasks.L4SkillsResources;
 
 import BESA.Emotional.EmotionalEvent;
@@ -20,7 +6,7 @@ import org.wpsim.PeasantFamily.Data.Utils.TimeConsumedBy;
 import org.wpsim.WellProdSim.Base.wpsTask;
 import rational.mapping.Believes;
 
-import java.util.Random;
+import java.security.SecureRandom;  // Cambiado a SecureRandom
 
 /**
  *
@@ -28,7 +14,7 @@ import java.util.Random;
  */
 public class AlternativeWorkTask extends wpsTask {
 
-    private static final Random RANDOM = new Random();
+    private static final SecureRandom RANDOM = new SecureRandom();  // Usar SecureRandom
 
     /**
      *
@@ -45,5 +31,4 @@ public class AlternativeWorkTask extends wpsTask {
         // http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0120-55522013000300012
         believes.getPeasantProfile().increaseMoney(RANDOM.nextInt(25001) + 10000.0);
     }
-
 }
