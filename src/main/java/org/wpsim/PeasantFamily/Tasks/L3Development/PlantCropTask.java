@@ -28,29 +28,29 @@ import org.wpsim.PeasantFamily.Data.Utils.TimeConsumedBy;
 import org.wpsim.WellProdSim.Base.wpsLandTask;
 import org.wpsim.WellProdSim.wpsStart;
 import org.wpsim.ViewerLens.Util.wpsReport;
-import org.wpsim.AgroEcosystem.Agent.CloseAgroEcosystemGuard;
-import org.wpsim.AgroEcosystem.Agent.AgroEcosystem;
-import org.wpsim.AgroEcosystem.Guards.AgroEcosystemGuard;
-import org.wpsim.AgroEcosystem.Agent.AgroEcosystemState;
-import org.wpsim.AgroEcosystem.Helper.Hemisphere;
-import org.wpsim.AgroEcosystem.Helper.Soil;
-import org.wpsim.AgroEcosystem.Helper.WorldConfiguration;
-import org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessage;
-import org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessageType;
-import org.wpsim.AgroEcosystem.layer.crop.CropLayer;
-import org.wpsim.AgroEcosystem.layer.crop.cell.rice.RiceCell;
-import org.wpsim.AgroEcosystem.layer.crop.cell.roots.RootsCell;
-import org.wpsim.AgroEcosystem.layer.disease.DiseaseCell;
-import org.wpsim.AgroEcosystem.layer.disease.DiseaseLayer;
-import org.wpsim.AgroEcosystem.layer.evapotranspiration.EvapotranspirationLayer;
-import org.wpsim.AgroEcosystem.layer.rainfall.RainfallLayer;
-import org.wpsim.AgroEcosystem.layer.shortWaveRadiation.ShortWaveRadiationLayer;
-import org.wpsim.AgroEcosystem.layer.temperature.TemperatureLayer;
+import org.wpsim.agroecosystem.agent.CloseAgroEcosystemGuard;
+import org.wpsim.agroecosystem.agent.AgroEcosystem;
+import org.wpsim.agroecosystem.Guards.AgroEcosystemGuard;
+import org.wpsim.agroecosystem.agent.AgroEcosystemState;
+import org.wpsim.agroecosystem.Helper.Hemisphere;
+import org.wpsim.agroecosystem.Helper.Soil;
+import org.wpsim.agroecosystem.Helper.WorldConfiguration;
+import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType;
+import org.wpsim.agroecosystem.layer.crop.CropLayer;
+import org.wpsim.agroecosystem.layer.crop.cell.rice.RiceCell;
+import org.wpsim.agroecosystem.layer.crop.cell.roots.RootsCell;
+import org.wpsim.agroecosystem.layer.disease.DiseaseCell;
+import org.wpsim.agroecosystem.layer.disease.DiseaseLayer;
+import org.wpsim.agroecosystem.layer.evapotranspiration.EvapotranspirationLayer;
+import org.wpsim.agroecosystem.layer.rainfall.RainfallLayer;
+import org.wpsim.agroecosystem.layer.shortWaveRadiation.ShortWaveRadiationLayer;
+import org.wpsim.agroecosystem.layer.temperature.TemperatureLayer;
 import rational.mapping.Believes;
 
 import java.util.concurrent.*;
 
-import static org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessageType.CROP_INIT;
+import static org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType.CROP_INIT;
 
 /**
  * @author jairo

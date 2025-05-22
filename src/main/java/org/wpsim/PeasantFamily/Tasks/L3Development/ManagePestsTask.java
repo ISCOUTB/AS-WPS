@@ -17,17 +17,16 @@ package org.wpsim.PeasantFamily.Tasks.L3Development;
 import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.System.AdmBESA;
-import BESA.Kernel.System.Directory.AgHandlerBESA;
 import org.wpsim.SimulationControl.Util.ControlCurrentDate;
 import org.wpsim.WellProdSim.Base.wpsTask;
 import org.wpsim.ViewerLens.Util.wpsReport;
-import org.wpsim.AgroEcosystem.Guards.AgroEcosystemGuard;
-import org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.Guards.AgroEcosystemGuard;
+import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
 import rational.mapping.Believes;
 import org.wpsim.PeasantFamily.Data.PeasantFamilyBelieves;
 import org.wpsim.PeasantFamily.Data.Utils.TimeConsumedBy;
 
-import static org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessageType.CROP_PESTICIDE;
+import static org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType.CROP_PESTICIDE;
 
 /**
  *

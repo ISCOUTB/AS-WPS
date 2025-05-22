@@ -20,14 +20,14 @@ import BESA.Kernel.System.AdmBESA;
 import org.wpsim.CivicAuthority.Data.LandInfo;
 import org.wpsim.WellProdSim.Base.wpsTask;
 import org.wpsim.ViewerLens.Util.wpsReport;
-import org.wpsim.AgroEcosystem.Guards.AgroEcosystemGuard;
-import org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.Guards.AgroEcosystemGuard;
+import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
 import rational.mapping.Believes;
 import org.wpsim.PeasantFamily.Data.PeasantFamilyBelieves;
 import org.wpsim.PeasantFamily.Data.Utils.CropCareType;
 import org.wpsim.PeasantFamily.Data.Utils.TimeConsumedBy;
 
-import static org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessageType.CROP_IRRIGATION;
+import static org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType.CROP_IRRIGATION;
 
 /**
  * @author jairo
