@@ -46,3 +46,14 @@ public abstract class GenericWorldLayerUniqueCell<T extends LayerCell> extends G
         this.cell = cell;
     }
 }
+
+/**
+ * Sets the cell to the layer
+ *
+ * @param cell cell to set in the layer
+ */
+/**
+ * Sets the cell to the layer
+ *
+ * @param cell cell to set in the layer
+ */
