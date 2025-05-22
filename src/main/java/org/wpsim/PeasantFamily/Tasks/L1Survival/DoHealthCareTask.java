@@ -51,6 +51,7 @@ public class DoHealthCareTask extends wpsTask {
      */
     @Override
     public void interruptTask(Believes parameters) {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     /**
@@ -58,6 +59,7 @@ public class DoHealthCareTask extends wpsTask {
      */
     @Override
     public void cancelTask(Believes parameters) {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 }
 

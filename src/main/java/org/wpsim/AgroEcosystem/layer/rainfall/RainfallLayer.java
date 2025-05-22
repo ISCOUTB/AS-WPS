@@ -27,6 +27,7 @@ public class RainfallLayer extends SimWorldSimpleLayer<RainfallCell> {
 
     @Override
     public void setupLayer() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     @Override

@@ -14,6 +14,7 @@ public class MonthData {
      *
      */
     public MonthData() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     /**

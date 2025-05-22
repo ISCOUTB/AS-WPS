@@ -17,6 +17,7 @@ public class LayerExecutor {
      *
      */
     public LayerExecutor() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     /**

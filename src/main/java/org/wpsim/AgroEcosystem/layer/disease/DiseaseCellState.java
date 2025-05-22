@@ -15,6 +15,7 @@ public class DiseaseCellState implements LayerCellState {
      *
      */
     public DiseaseCellState() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     /**

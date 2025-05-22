@@ -61,7 +61,7 @@ public class CommunityDynamics extends AgentBESA {
      */
     @Override
     public void setupAgent() {
-        
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     /**
@@ -69,7 +69,7 @@ public class CommunityDynamics extends AgentBESA {
      */
     @Override
     public void shutdownAgent() {
-        
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
     
 }

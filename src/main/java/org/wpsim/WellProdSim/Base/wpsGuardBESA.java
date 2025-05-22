@@ -25,5 +25,6 @@ public class wpsGuardBESA extends GuardBESA {
 
     @Override
     public void funcExecGuard(EventBESA eventBESA) {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 }

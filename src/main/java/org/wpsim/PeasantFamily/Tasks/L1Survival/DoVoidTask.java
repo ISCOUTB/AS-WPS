@@ -61,12 +61,12 @@ public class DoVoidTask extends Task {
 
     @Override
     public void interruptTask(Believes believes) {
-
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     @Override
     public void cancelTask(Believes believes) {
-
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
 }

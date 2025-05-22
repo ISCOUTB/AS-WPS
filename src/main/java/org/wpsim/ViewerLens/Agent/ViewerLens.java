@@ -73,6 +73,7 @@ public class ViewerLens extends AgentBESA {
      */
     @Override
     public void shutdownAgent() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
     
 }
