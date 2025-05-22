@@ -21,7 +21,6 @@ public class AgroEcosystem extends AgentBESA {
      */
     public AgroEcosystem(String alias, StateBESA state, StructBESA structAgent) throws KernelAgentExceptionBESA {
         super(alias, state, structAgent, TH);
-        //System.out.println("Creando WorldAgent tierra " + alias);
     }
 
     /**
@@ -29,9 +28,7 @@ public class AgroEcosystem extends AgentBESA {
      */
     @Override
     public void setupAgent() {
-        // Método vacío intencionalmente porque no se requiere configuración al iniciar el agente
-        // Si se desea activar esta excepción, comentar la línea anterior y descomentar la siguiente:
-        // throw new UnsupportedOperationException("setupAgent() no está implementado en AgroEcosystem");
+
     }
 
 
@@ -40,6 +37,5 @@ public class AgroEcosystem extends AgentBESA {
      */
     @Override
     public void shutdownAgent() {
-        //System.out.println("Eliminando WorldAgent tierra " + this.getAlias());
     }
 }
