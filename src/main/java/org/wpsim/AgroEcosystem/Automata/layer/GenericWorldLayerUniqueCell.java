@@ -24,7 +24,7 @@ public abstract class GenericWorldLayerUniqueCell<T extends LayerCell> extends G
      *
      * @param cell
      */
-    public GenericWorldLayerUniqueCell(T cell) {
+    protected GenericWorldLayerUniqueCell(T cell) {
         this.cell = cell;
     }
 
