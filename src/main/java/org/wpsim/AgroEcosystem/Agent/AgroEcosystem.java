@@ -29,7 +29,11 @@ public class AgroEcosystem extends AgentBESA {
      */
     @Override
     public void setupAgent() {
+        // Método vacío intencionalmente porque no se requiere configuración al iniciar el agente
+        // Si se desea activar esta excepción, comentar la línea anterior y descomentar la siguiente:
+        // throw new UnsupportedOperationException("setupAgent() no está implementado en AgroEcosystem");
     }
+
 
     /**
      *
