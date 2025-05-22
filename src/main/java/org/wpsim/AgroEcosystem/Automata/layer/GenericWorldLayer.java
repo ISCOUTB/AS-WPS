@@ -13,9 +13,9 @@ public abstract class GenericWorldLayer implements WorldLayer {
     protected HashMap<String, WorldLayer> dependantLayers;
 
     /**
-     *
+     * Constructor protegido, solo accesible para subclases
      */
-    public GenericWorldLayer() {
+    protected GenericWorldLayer() {
         this.dependantLayers = new HashMap<>();
     }
 
