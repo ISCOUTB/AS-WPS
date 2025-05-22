@@ -15,10 +15,11 @@ public abstract class GenericWorldLayerMatrixCell<T extends LayerCell> extends G
     protected T[][] cellMatrix;
 
     /**
+     * Constructor protegido con parámetro
      *
-     * @param cellMatrix
+     * @param cellMatrix Matrix of cells
      */
-    public GenericWorldLayerMatrixCell(T[][] cellMatrix) {
+    protected GenericWorldLayerMatrixCell(T[][] cellMatrix) {
         this.cellMatrix = cellMatrix;
     }
 
