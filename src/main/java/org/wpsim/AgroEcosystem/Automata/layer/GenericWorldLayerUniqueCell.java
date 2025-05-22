@@ -15,9 +15,9 @@ public abstract class GenericWorldLayerUniqueCell<T extends LayerCell> extends G
     protected T cell;
 
     /**
-     *
+     * Constructor protegido, accesible solo por subclases
      */
-    public GenericWorldLayerUniqueCell() {
+    protected GenericWorldLayerUniqueCell() {
     }
 
     /**
