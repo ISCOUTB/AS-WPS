@@ -28,7 +28,7 @@ public class AgroEcosystem extends AgentBESA {
      */
     @Override
     public void setupAgent() {
-
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
 
@@ -37,5 +37,6 @@ public class AgroEcosystem extends AgentBESA {
      */
     @Override
     public void shutdownAgent() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 }
