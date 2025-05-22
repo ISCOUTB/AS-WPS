@@ -23,9 +23,9 @@ public abstract class GenericWorldLayerMatrixCell<T extends LayerCell> extends G
     }
 
     /**
-     *
+     * Constructor protegido para uso por subclases
      */
-    public GenericWorldLayerMatrixCell() {
+    protected GenericWorldLayerMatrixCell() {
     }
 
     /**
