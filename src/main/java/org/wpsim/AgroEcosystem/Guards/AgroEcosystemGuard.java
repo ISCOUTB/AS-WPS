@@ -163,6 +163,10 @@ public class AgroEcosystemGuard extends GuardBESA {
                             agroEcosystemMessage.getPeasantAgentAlias(),
                             peasantMessage);
                     break;
+                default:
+                    // Caso no contemplado, no hacer nada o registrar aviso
+                    ReportBESA.warn("Unhandled AgroEcosystemMessageType: " + agroEcosystemMessage.getWorldMessageType());
+                    break;
             }
 
         } finally {
