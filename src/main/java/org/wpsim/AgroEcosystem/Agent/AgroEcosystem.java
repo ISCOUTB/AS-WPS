@@ -8,25 +8,22 @@ import BESA.Kernel.Agent.StructBESA;
 /**
  * AgentBESA implementation for the world agent
  */
-
-/**
- *
- * @param alias
- * @param state
- * @param structAgent
- * @throws KernelAgentExceptionBESA
- */
-
 public class AgroEcosystem extends AgentBESA {
     
     private static final double TH = 0.91;
     
-
+    /**
+     *
+     * @param alias
+     * @param state
+     * @param structAgent
+     * @throws KernelAgentExceptionBESA
+     */
     public AgroEcosystem(String alias, StateBESA state, StructBESA structAgent) throws KernelAgentExceptionBESA {
         super(alias, state, structAgent, TH);
-
+        //System.out.println("Creando WorldAgent tierra " + alias);
     }
-    //System.out.println("Creando WorldAgent tierra " + alias);
+
     /**
      *
      */
@@ -38,8 +35,7 @@ public class AgroEcosystem extends AgentBESA {
      *
      */
     @Override
-    //System.out.println("Eliminando WorldAgent tierra " + this.getAlias());
     public void shutdownAgent() {
-
+        //System.out.println("Eliminando WorldAgent tierra " + this.getAlias());
     }
 }
