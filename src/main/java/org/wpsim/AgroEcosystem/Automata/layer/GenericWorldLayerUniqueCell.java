@@ -15,16 +15,16 @@ public abstract class GenericWorldLayerUniqueCell<T extends LayerCell> extends G
     protected T cell;
 
     /**
-     *
+     * Constructor protegido, accesible solo por subclases
      */
-    public GenericWorldLayerUniqueCell() {
+    protected GenericWorldLayerUniqueCell() {
     }
 
     /**
      *
      * @param cell
      */
-    public GenericWorldLayerUniqueCell(T cell) {
+    protected GenericWorldLayerUniqueCell(T cell) {
         this.cell = cell;
     }
 
@@ -46,3 +46,14 @@ public abstract class GenericWorldLayerUniqueCell<T extends LayerCell> extends G
         this.cell = cell;
     }
 }
+
+/**
+ * Sets the cell to the layer
+ *
+ * @param cell cell to set in the layer
+ */
+/**
+ * Sets the cell to the layer
+ *
+ * @param cell cell to set in the layer
+ */

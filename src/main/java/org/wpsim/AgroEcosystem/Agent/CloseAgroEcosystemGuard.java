@@ -4,19 +4,20 @@ import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.GuardBESA;
 import org.wpsim.AgroEcosystem.Messages.AgroEcosystemMessage;
 
-/**
- * BESA world's guard, holds the actions that receive from the peasant agent
- */
+import java.util.logging.Logger;
+
 public class CloseAgroEcosystemGuard extends GuardBESA {
 
-    /**
-     *
-     * @param eventBESA
-     */
+    // Definimos el logger estático para esta clase
+    private static final Logger logger = Logger.getLogger(CloseAgroEcosystemGuard.class.getName());
+
     @Override
     public synchronized void funcExecGuard(EventBESA eventBESA) {
         AgroEcosystemMessage agroEcosystemMessage = (AgroEcosystemMessage) eventBESA.getData();
-        System.out.println("Cerrando agent 🚩🚩🚩 " +  this.agent.getAlias());
+
+        // Reemplazamos el System.out.println por logger info
+        logger.info("Cerrando agent 🚩🚩🚩 " + this.agent.getAlias());
+
         this.agent.shutdownAgent();
     }
 }

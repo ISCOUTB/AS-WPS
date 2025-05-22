@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Random;
 
 public class NaturalPhenomena extends PeriodicGuardBESA {
+
+    private static final Random RANDOM = new Random();
+
     public NaturalPhenomena() {
         super();
         wpsCSV.log("NaturalPhenomena", "Agent,CurrentDate,randomIncreaseOrDecreaseType,randomNumber");
@@ -40,7 +43,13 @@ public class NaturalPhenomena extends PeriodicGuardBESA {
                                 )
                         )
                 );
-                wpsCSV.log("NaturalPhenomena", "Market," + ControlCurrentDate.getInstance().getCurrentDate() + "," + randomIncreaseOrDecreaseType + "," + randomNumber);
+                wpsCSV.log(
+                        "NaturalPhenomena",
+                        "Market," +
+                                ControlCurrentDate.getInstance().getCurrentDate() +
+                                "," + randomIncreaseOrDecreaseType +
+                                "," + randomNumber
+                );
             } catch (ExceptionBESA e) {
                 throw new RuntimeException(e);
             }
@@ -56,14 +65,12 @@ public class NaturalPhenomena extends PeriodicGuardBESA {
                 MarketPlaceMessageType.DECREASE_SEEDS_PRICE,
                 MarketPlaceMessageType.DECREASE_CROP_PRICE
         );
-        Random random = new Random();
-        int index = random.nextInt(increaseDecreaseMessages.size());
+        int index = RANDOM.nextInt(increaseDecreaseMessages.size());
         return increaseDecreaseMessages.get(index);
     }
 
     public static int selectRandomNumber() {
-        Random random = new Random();
-        int randomNumber = random.nextInt(32);
+        int randomNumber = RANDOM.nextInt(32);
         return 5 + (randomNumber * 5);
     }
 }

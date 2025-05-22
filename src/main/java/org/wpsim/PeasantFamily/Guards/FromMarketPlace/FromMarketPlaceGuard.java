@@ -40,19 +40,16 @@ public class FromMarketPlaceGuard extends GuardBESA {
         wpsReport.debug(fromMarketPlaceMessageType, believes.getPeasantProfile().getPeasantFamilyAlias());
         int discount = 0;
 
-        //wpsReport.warn(fromMarketMessage.getMessageType());
-
         switch (fromMarketPlaceMessageType) {
             case SOLD_CROP:
                 believes.getPeasantProfile().increaseMoney(
                         believes.getPeasantProfile().getHarvestedWeight()
-                                * believes.getPriceList().get("rice").getCost()
+                                * (double) believes.getPriceList().get("rice").getCost()
                 );
                 believes.setUpdatePriceList(true);
                 break;
             case PRICE_LIST:
                 believes.setPriceList(fromMarketPlaceMessage.getPriceList());
-                //System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n=============" + fromMarketPlaceMessage.getPriceList().size() + "================\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + this.getAgent().getAlias());
                 break;
             case SEEDS:
                 believes.getPeasantProfile().setSeeds(fromMarketPlaceMessage.getQuantity());
@@ -77,16 +74,11 @@ public class FromMarketPlaceGuard extends GuardBESA {
                 discount = fromMarketPlaceMessage.getQuantity() * believes.getPriceList().get("tools").getCost();
                 break;
             case LIVESTOCK:
-                believes.getPeasantProfile().setLivestockNumber(
-                        fromMarketPlaceMessage.getQuantity()
-                );
+                believes.getPeasantProfile().setLivestockNumber(fromMarketPlaceMessage.getQuantity());
                 discount = fromMarketPlaceMessage.getQuantity() * believes.getPriceList().get("livestock").getCost();
                 break;
         }
 
         believes.getPeasantProfile().useMoney(discount);
-
-
     }
-
 }

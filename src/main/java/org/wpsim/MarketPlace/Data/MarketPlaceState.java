@@ -78,7 +78,6 @@ public class MarketPlaceState extends StateBESA implements Serializable {
         diversityFactor = totalOffers > 0 ? (double) freshOffersCount / totalOffers : 0;
     }
 
-
     /**
      * Lógica para ajustar precios basados en la rareza de cada producto.
      */
@@ -121,8 +120,6 @@ public class MarketPlaceState extends StateBESA implements Serializable {
         //wpsReport.info("Adjusted prices around the initial price with moderated fluctuations.", "wpsMarket");
     }
 
-
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("MarketAgentState{");
@@ -161,8 +158,9 @@ public class MarketPlaceState extends StateBESA implements Serializable {
         } else {
             productName = "roots";
         }
-        changePrice(productName, factor * -1);
+        changePrice(productName, -factor);
     }
+
     public synchronized void increaseCropPrice(int factor) {
         String productName;
         if (Coin.flipCoin()) {
@@ -178,22 +176,23 @@ public class MarketPlaceState extends StateBESA implements Serializable {
     }
 
     public synchronized void decreaseToolsPrice(int factor) {
-        changePrice("tools", factor * -1);
+        changePrice("tools", -factor);
     }
 
     public synchronized void decreaseSeedsPrice(int factor) {
-        changePrice("seeds", factor * -1);
+        changePrice("seeds", -factor);
     }
 
     public synchronized void increaseSeedsPrice(int factor) {
         changePrice("seeds", factor);
     }
+
     public synchronized void changePrice(String productName, double factor){
         factor = 1 + (factor / 100);
         double basePrice = resources.get(productName).getCost();
         double newPrice = basePrice * factor;
         resources.get(productName).setCost((int) newPrice);
         resources.get(productName).setBehavior(Double.compare(basePrice, newPrice));
-        //System.out.println("Adjusted price for " + productName + " from " + price + " to " + (int) newPrice);
+        //System.out.println("Adjusted price for " + productName + " from " + basePrice + " to " + (int) newPrice);
     }
 }
