@@ -103,6 +103,7 @@ public final class wpsConfig {
 
     public PeasantFamilyProfile getDefaultPeasantFamilyProfile() {
         return defaultPeasantFamilyProfile.clone();
+
     }
 
     public String getStartSimulationDate() {

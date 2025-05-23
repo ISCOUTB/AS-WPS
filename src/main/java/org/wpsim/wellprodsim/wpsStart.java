@@ -21,7 +21,7 @@ import org.wpsim.bankoffice.agent.BankOffice;
 import org.wpsim.civicauthority.agent.CivicAuthority;
 import org.wpsim.communitydynamics.agent.CommunityDynamics;
 import org.wpsim.marketplace.agent.MarketPlace;
-import org.wpsim.peasantfamily.agent.PeasantFamily;
+import org.wpsim.peasantfamily.agent.peasantfamily;
 import org.wpsim.perturbationgenerator.agent.PerturbationGenerator;
 import org.wpsim.simulationcontrol.agent.SimulationControl;
 import org.wpsim.simulationcontrol.util.ControlCurrentDate;
@@ -233,12 +233,12 @@ public class wpsStart {
         //wpsReport.info("Creando agentes, desde " + min + ", hasta " + max, AdmBESA.getInstance().getConfigBESA().getAliasContainer());
         try {
             for (int i = min; i <= max; i++) {
-                PeasantFamily peasantFamily = new PeasantFamily(
+                peasantfamily peasantfamily = new peasantfamily(
                         config.getUniqueFarmerName(),
                         config.getFarmerProfile()
                 );
                 CREATED_AGENTS++;
-                peasantFamily.start();
+                peasantfamily.start();
             }
         } catch (Exception ex) {
             System.err.println("error creando peasants" + ex.getMessage());

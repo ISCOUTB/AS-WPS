@@ -22,7 +22,7 @@ import BESA.Kernel.System.AdmBESA;
 import BESA.Log.ReportBESA;
 import org.wpsim.peasantfamily.data.Utils.PeasantActivityType;
 import org.wpsim.simulationcontrol.util.ControlCurrentDate;
-import org.wpsim.peasantfamily.agent.PeasantFamily;
+import org.wpsim.peasantfamily.agent.peasantfamily;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
 import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.viewerlens.util.wpsReport;
@@ -43,7 +43,7 @@ public class HeartBeatGuard extends PeriodicGuardBESA {
      */
     @Override
     public synchronized void funcPeriodicExecGuard(EventBESA event) {
-        PeasantFamily PeasantFamily = (org.wpsim.peasantfamily.agent.PeasantFamily) this.getAgent();
+        peasantfamily PeasantFamily = (peasantfamily) this.getAgent();
         PeasantFamilyBelieves believes = (PeasantFamilyBelieves) ((StateBDI) PeasantFamily.getState()).getBelieves();
         StateBDI state = (StateBDI) PeasantFamily.getState();
 

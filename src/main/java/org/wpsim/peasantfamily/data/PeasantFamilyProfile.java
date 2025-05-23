@@ -101,6 +101,15 @@ public class PeasantFamilyProfile implements Serializable, Cloneable {
     /**
      *
      */
+    @Override
+    public PeasantFamilyProfile clone() {
+        try {
+            return (PeasantFamilyProfile) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError("Error clonando PeasantFamilyProfile", e);
+        }
+    }
+
     public PeasantFamilyProfile(PeasantFamilyProfile original) {
         this.money = original.money;
         this.initialMoney = original.initialMoney;

@@ -45,7 +45,7 @@
             <argument>-training</argument>
             <argument>0</argument>
             <argument>-agents</argument>
-            <argument>500</argument>
+            <argument>1</argument>
           </arguments>
         </configuration>
       </plugin>
@@ -125,7 +125,7 @@
                 <argument>-training</argument>
                 <argument>0</argument>
                 <argument>-agents</argument>
-                <argument>500</argument>
+                <argument>1</argument>
               </arguments>
             </configuration>
           </plugin>

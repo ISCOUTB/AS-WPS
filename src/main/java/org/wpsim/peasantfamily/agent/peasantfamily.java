@@ -76,7 +76,7 @@ import static org.wpsim.wellprodsim.wpsStart.params;
  * @author jairo
  */
 @SuppressWarnings("unchecked")
-public class PeasantFamily extends AgentBDI {
+public class peasantfamily extends AgentBDI {
 
     private static final double BDITHRESHOLD = 0;
 
@@ -190,7 +190,7 @@ public class PeasantFamily extends AgentBDI {
      * @param peasantProfile
      * @throws ExceptionBESA
      */
-    public PeasantFamily(String alias, PeasantFamilyProfile peasantProfile) throws ExceptionBESA {
+    public peasantfamily(String alias, PeasantFamilyProfile peasantProfile) throws ExceptionBESA {
         super(alias, createBelieves(alias, peasantProfile), createGoals(), BDITHRESHOLD, createStruct(new StructBESA()));
         //wpsReport.info("Starting " + alias + " " + peasantProfile.getPeasantKind(), alias);
     }
