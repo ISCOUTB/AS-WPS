@@ -58,8 +58,7 @@ public class BankOfficeState extends StateBESA implements Serializable {
 
     public boolean giveLoanToPeasantFamily(BankOfficeMessageType loanType, String peasantFamily, double money) {
 
-        //@TODO: En el futuro implementar préstamos informales, cobros semanales y aplicación de intereses adicionales.
-        // Por ahora, solo prestamos si hay suficiente dinero disponible y no hay préstamos activos para la familia.
+        //@TODO: incluir prestamos informales, cobro cada semana y más interés.
         if (availableMoney > money && !loans.containsKey(peasantFamily)) {
             addLoanPeasantFamily(
                     peasantFamily,

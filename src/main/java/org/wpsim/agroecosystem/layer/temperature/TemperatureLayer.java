@@ -26,6 +26,7 @@ public class TemperatureLayer extends SimWorldSimpleLayer<TemperatureCell> {
 
     @Override
     public void setupLayer() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     @Override

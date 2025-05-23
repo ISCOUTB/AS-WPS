@@ -39,6 +39,7 @@ public class CropLayer extends GenericWorldLayer {
 
     @Override
     public void setupLayer() {
+        // Constructor vacío intencional, no se requiere inicialización adicional.
     }
 
     @Override

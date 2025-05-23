@@ -11,7 +11,13 @@
   <component name="ChangeListManager">
     <list default="true" id="392c53ea-9274-4c97-a65a-fcdba989e4d5" name="Changes" comment="Configuración hilos bajos, fuzzy bajo.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/crop/CropLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/crop/CropLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/disease/DiseaseLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/disease/DiseaseLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/evapotranspiration/EvapotranspirationLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/evapotranspiration/EvapotranspirationLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/rainfall/RainfallLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/rainfall/RainfallLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/temperature/TemperatureLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/temperature/TemperatureLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/bankoffice/data/BankOfficeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/bankoffice/data/BankOfficeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/civicauthority/agent/CivicAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/civicauthority/agent/CivicAuthority.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
