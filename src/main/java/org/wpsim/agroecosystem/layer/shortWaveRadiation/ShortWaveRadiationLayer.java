@@ -3,7 +3,7 @@ package org.wpsim.agroecosystem.layer.shortWaveRadiation;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-import org.wpsim.SimulationControl.Data.DateHelper;
+import org.wpsim.simulationcontrol.data.DateHelper;
 import org.wpsim.agroecosystem.Helper.ExtraterrestrialRadiation;
 import org.wpsim.agroecosystem.Helper.Hemisphere;
 import org.wpsim.agroecosystem.Helper.WorldConfiguration;
