@@ -24,7 +24,7 @@ import org.wpsim.agroecosystem.guards.AgroEcosystemGuard;
 import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 import static org.wpsim.agroecosystem.messages.AgroEcosystemMessageType.CROP_PESTICIDE;
 

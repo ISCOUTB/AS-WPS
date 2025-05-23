@@ -13,7 +13,7 @@
  * ==========================================================================
  */
 
-package org.wpsim.peasantfamily.data.Utils;
+package org.wpsim.peasantfamily.data.utils;
 
 import java.io.Serializable;
 

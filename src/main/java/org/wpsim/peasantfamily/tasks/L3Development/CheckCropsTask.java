@@ -18,14 +18,14 @@ import BESA.Emotional.EmotionalEvent;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.System.AdmBESA;
 import org.wpsim.civicauthority.data.LandInfo;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
 import org.wpsim.wellprodsim.base.wpsTask;
 import org.wpsim.viewerlens.util.wpsReport;
 import org.wpsim.agroecosystem.guards.AgroEcosystemGuard;
 import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 import static org.wpsim.agroecosystem.messages.AgroEcosystemMessageType.CROP_INFORMATION;
 

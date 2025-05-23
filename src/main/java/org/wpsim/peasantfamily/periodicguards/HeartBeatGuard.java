@@ -20,7 +20,7 @@ import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.PeriodicGuardBESA;
 import BESA.Kernel.System.AdmBESA;
 import BESA.Log.ReportBESA;
-import org.wpsim.peasantfamily.data.Utils.PeasantActivityType;
+import org.wpsim.peasantfamily.data.utils.PeasantActivityType;
 import org.wpsim.simulationcontrol.util.ControlCurrentDate;
 import org.wpsim.peasantfamily.agent.peasantfamily;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;

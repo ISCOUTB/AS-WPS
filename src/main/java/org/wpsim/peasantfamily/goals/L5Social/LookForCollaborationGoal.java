@@ -26,7 +26,7 @@ import com.fuzzylite.term.Trapezoid;
 import com.fuzzylite.term.Triangle;
 import com.fuzzylite.variable.InputVariable;
 import org.wpsim.civicauthority.data.LandInfo;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
 import org.wpsim.peasantfamily.emotions.EmotionalEvaluator;
 import org.wpsim.wellprodsim.base.wpsGoalBDI;
 import org.wpsim.wellprodsim.wpsStart;

@@ -24,8 +24,8 @@ import org.wpsim.marketplace.data.MarketPlaceMessage;
 import org.wpsim.viewerlens.util.wpsReport;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.ResourceNeededType;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.ResourceNeededType;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 import static org.wpsim.marketplace.data.MarketPlaceMessageType.BUY_PESTICIDES;
 

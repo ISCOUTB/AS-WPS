@@ -28,7 +28,7 @@ import org.wpsim.simulationcontrol.guards.SimulationControlGuard;
 import org.wpsim.simulationcontrol.util.ControlCurrentDate;
 import org.wpsim.simulationcontrol.data.DateHelper;
 import org.wpsim.civicauthority.data.LandInfo;
-import org.wpsim.peasantfamily.data.Utils.*;
+import org.wpsim.peasantfamily.data.utils.*;
 import org.wpsim.peasantfamily.emotions.EmotionalComponent;
 import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.viewerlens.util.wpsReport;

@@ -18,8 +18,8 @@ import org.wpsim.civicauthority.data.LandInfo;
 import org.wpsim.wellprodsim.base.wpsLandTask;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 /**
  *

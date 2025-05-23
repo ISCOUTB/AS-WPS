@@ -18,7 +18,7 @@ import BESA.Emotional.EmotionalEvent;
 import org.wpsim.wellprodsim.base.wpsTask;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.PeasantLeisureType;
+import org.wpsim.peasantfamily.data.utils.PeasantLeisureType;
 
 import java.util.Random;
 

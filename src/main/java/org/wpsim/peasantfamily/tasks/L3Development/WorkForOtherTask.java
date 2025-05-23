@@ -19,7 +19,7 @@ import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.System.AdmBESA;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.peasantfamily.guards.FromCommunityDynamics.PeasantWorkerContractFinishedGuard;
 import org.wpsim.wellprodsim.base.wpsTask;
 import org.wpsim.communitydynamics.data.CommunityDynamicsDataMessage;

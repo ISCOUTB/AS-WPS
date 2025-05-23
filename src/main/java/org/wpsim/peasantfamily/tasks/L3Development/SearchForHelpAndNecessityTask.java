@@ -19,7 +19,7 @@ import org.wpsim.simulationcontrol.util.ControlCurrentDate;
 import org.wpsim.wellprodsim.base.wpsTask;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.MoneyOriginType;
+import org.wpsim.peasantfamily.data.utils.MoneyOriginType;
 
 /**
  *

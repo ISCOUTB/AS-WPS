@@ -19,7 +19,7 @@ import BESA.Emotional.EmotionalEvent;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.GuardBESA;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.MoneyOriginType;
+import org.wpsim.peasantfamily.data.utils.MoneyOriginType;
 import org.wpsim.viewerlens.util.wpsReport;
 
 /**

@@ -16,7 +16,7 @@ package org.wpsim.peasantfamily.tasks.L3Development;
 
 import org.wpsim.civicauthority.data.LandInfo;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.wellprodsim.base.wpsLandTask;
 import rational.mapping.Believes;
 

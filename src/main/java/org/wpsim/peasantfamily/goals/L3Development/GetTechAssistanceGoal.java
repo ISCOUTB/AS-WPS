@@ -18,7 +18,7 @@ import BESA.BDI.AgentStructuralModel.GoalBDITypes;
 import BESA.BDI.AgentStructuralModel.StateBDI;
 import BESA.Kernel.Agent.Event.KernellAgentEventExceptionBESA;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.peasantfamily.tasks.L3Development.GetTechAssistanceTask;
 import org.wpsim.simulationcontrol.data.Coin;
 import org.wpsim.wellprodsim.base.wpsGoalBDI;

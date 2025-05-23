@@ -21,8 +21,8 @@ import BESA.Kernel.Agent.GuardBESA;
 import org.json.JSONObject;
 import org.wpsim.civicauthority.data.LandInfo;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.CropCareType;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.CropCareType;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
 import org.wpsim.viewerlens.util.wpsReport;
 
 import java.time.Instant;

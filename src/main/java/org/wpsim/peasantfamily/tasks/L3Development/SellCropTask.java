@@ -25,8 +25,8 @@ import org.wpsim.marketplace.guards.MarketPlaceGuard;
 import org.wpsim.marketplace.data.MarketPlaceMessage;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 import static org.wpsim.marketplace.data.MarketPlaceMessageType.SELL_CROP;
 

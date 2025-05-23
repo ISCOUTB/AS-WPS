@@ -12,37 +12,43 @@
  * management and emotional reasoning BDI.                                  *
  * ==========================================================================
  */
-package org.wpsim.peasantfamily.data.Utils;
+package org.wpsim.peasantfamily.data.utils;
 
 /**
  *
  */
-public enum CropCareType {
+public enum MoneyOriginType {
 
     /**
      *
      */
-    PESTICIDE,
-
+    LOAN,
     /**
      *
      */
-    IRRIGATION,
-    
+    INFORMAL,
     /**
      *
      */
-    CHECK,
-    
+    AVANCE,
     /**
-     * 
+     *
      */
-    BADWEED, 
-    
+    BENEFICENCIA,
     /**
-     * 
+     *
      */
-    NONE
-    
-    
+    ROBERY,
+    /**
+     *
+     */
+    LOAN_DENIED,
+    /**
+     *
+     */
+    NONE,
+    /**
+     *
+     */
+    INFORMAL_DENIED
 }

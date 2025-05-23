@@ -12,7 +12,7 @@
  * management and emotional reasoning BDI.                                  *
  * ==========================================================================
  */
-package org.wpsim.peasantfamily.data.Utils;
+package org.wpsim.peasantfamily.data.utils;
 
 /**
  *

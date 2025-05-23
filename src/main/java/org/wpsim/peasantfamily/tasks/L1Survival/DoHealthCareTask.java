@@ -17,7 +17,7 @@ package org.wpsim.peasantfamily.tasks.L1Survival;
 import BESA.Emotional.EmotionalEvent;
 import BESA.Emotional.Semantics;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.peasantfamily.emotions.EmotionalEvaluator;
 import org.wpsim.wellprodsim.base.wpsTask;
 import rational.mapping.Believes;

@@ -19,7 +19,7 @@ import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.System.AdmBESA;
 import org.wpsim.bankoffice.guards.BankOfficeGuard;
 import org.wpsim.bankoffice.data.BankOfficeMessage;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.wellprodsim.base.wpsTask;
 import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;

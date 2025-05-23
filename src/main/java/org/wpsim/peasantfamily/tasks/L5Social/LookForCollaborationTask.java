@@ -23,7 +23,7 @@ import org.wpsim.communitydynamics.guards.CommunityDynamicsRequestHelpGuard;
 import org.wpsim.wellprodsim.wpsStart;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 
 /**
  *

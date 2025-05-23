@@ -19,7 +19,7 @@ import BESA.BDI.AgentStructuralModel.StateBDI;
 import BESA.Kernel.Agent.Event.KernellAgentEventExceptionBESA;
 import org.wpsim.civicauthority.data.LandInfo;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.wellprodsim.base.wpsGoalBDI;
 import org.wpsim.peasantfamily.tasks.L3Development.DeforestingLandTask;
 import org.wpsim.wellprodsim.wpsStart;

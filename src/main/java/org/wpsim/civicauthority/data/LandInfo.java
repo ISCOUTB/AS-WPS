@@ -1,7 +1,7 @@
 package org.wpsim.civicauthority.data;
 
-import org.wpsim.peasantfamily.data.Utils.CropCareType;
-import org.wpsim.peasantfamily.data.Utils.SeasonType;
+import org.wpsim.peasantfamily.data.utils.CropCareType;
+import org.wpsim.peasantfamily.data.utils.SeasonType;
 
 import java.util.Objects;
 

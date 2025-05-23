@@ -21,7 +21,7 @@ import org.wpsim.simulationcontrol.data.DateHelper;
 import org.wpsim.wellprodsim.base.wpsGoalBDI;
 import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
-import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
+import org.wpsim.peasantfamily.data.utils.TimeConsumedBy;
 import org.wpsim.peasantfamily.tasks.L3Development.AttendReligiousEventsTask;
 import rational.RationalRole;
 import rational.mapping.Believes;
