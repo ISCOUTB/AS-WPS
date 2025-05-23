@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.evapotranspiration;
 
-import org.wpsim.agroecosystem.Automata.cell.GenericWorldLayerCell;
+import org.wpsim.agroecosystem.automata.cell.GenericWorldLayerCell;
 
 /**
  * Concrete implementation for the evapotranspiration cell

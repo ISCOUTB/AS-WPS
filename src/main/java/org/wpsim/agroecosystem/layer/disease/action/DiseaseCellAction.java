@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.disease.action;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellAction;
+import org.wpsim.agroecosystem.automata.cell.LayerCellAction;
 
 /**
  * Implementation of an action that can be taken into account in the layer execution ej: insecticide application to crop

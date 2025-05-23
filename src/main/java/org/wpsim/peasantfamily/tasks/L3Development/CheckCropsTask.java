@@ -21,13 +21,13 @@ import org.wpsim.civicauthority.data.LandInfo;
 import org.wpsim.peasantfamily.data.Utils.SeasonType;
 import org.wpsim.wellprodsim.base.wpsTask;
 import org.wpsim.viewerlens.util.wpsReport;
-import org.wpsim.agroecosystem.Guards.AgroEcosystemGuard;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.guards.AgroEcosystemGuard;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
 import rational.mapping.Believes;
 import org.wpsim.peasantfamily.data.PeasantFamilyBelieves;
 import org.wpsim.peasantfamily.data.Utils.TimeConsumedBy;
 
-import static org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType.CROP_INFORMATION;
+import static org.wpsim.agroecosystem.messages.AgroEcosystemMessageType.CROP_INFORMATION;
 
 /**
  * @author jairo

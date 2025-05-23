@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Automata.layer;
+package org.wpsim.agroecosystem.automata.layer;
 
 import java.util.HashMap;
 

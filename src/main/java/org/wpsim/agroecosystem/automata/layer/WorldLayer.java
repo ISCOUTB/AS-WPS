@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Automata.layer;
+package org.wpsim.agroecosystem.automata.layer;
 
 /**
  * Interface that holds the contract to build a layer

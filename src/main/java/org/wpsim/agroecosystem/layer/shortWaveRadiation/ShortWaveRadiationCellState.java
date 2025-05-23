@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.shortWaveRadiation;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellState;
+import org.wpsim.agroecosystem.automata.cell.LayerCellState;
 
 /**
  * Concrete implementation of the short wave radiation cell state

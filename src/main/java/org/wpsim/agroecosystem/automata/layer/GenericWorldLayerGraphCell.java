@@ -1,9 +1,9 @@
-package org.wpsim.agroecosystem.Automata.layer;
+package org.wpsim.agroecosystem.automata.layer;
 
 import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleGraph;
-import org.wpsim.agroecosystem.Automata.cell.LayerCell;
+import org.wpsim.agroecosystem.automata.cell.LayerCell;
 
 import java.util.ArrayList;
 import java.util.List;

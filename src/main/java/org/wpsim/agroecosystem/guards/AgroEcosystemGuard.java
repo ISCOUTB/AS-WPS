@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Guards;
+package org.wpsim.agroecosystem.guards;
 
 import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
@@ -13,9 +13,9 @@ import org.wpsim.peasantfamily.guards.FromAgroEcosystem.FromAgroEcosystemMessage
 import org.wpsim.peasantfamily.guards.FromAgroEcosystem.FromAgroEcosystemMessageType;
 import org.wpsim.viewerlens.util.wpsReport;
 import org.wpsim.agroecosystem.agent.AgroEcosystemState;
-import org.wpsim.agroecosystem.Helper.WorldConfiguration;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType;
+import org.wpsim.agroecosystem.helper.WorldConfiguration;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessageType;
 import org.wpsim.agroecosystem.layer.crop.CropLayer;
 import org.wpsim.agroecosystem.layer.crop.cell.CropCell;
 import org.wpsim.agroecosystem.layer.crop.cell.CropCellState;

@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.shortWaveRadiation;
 
-import org.wpsim.agroecosystem.Automata.cell.GenericWorldLayerCell;
+import org.wpsim.agroecosystem.automata.cell.GenericWorldLayerCell;
 
 /**
  * Concrete cell implementation

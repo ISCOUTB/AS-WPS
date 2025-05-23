@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer;
 
-import org.wpsim.agroecosystem.Automata.layer.LayerExecutionParams;
+import org.wpsim.agroecosystem.automata.layer.LayerExecutionParams;
 
 /**
  * Pojo implementation that holds the necessary parameters for the layer executions

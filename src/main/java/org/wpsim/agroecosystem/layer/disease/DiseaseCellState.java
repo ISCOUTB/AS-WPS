@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.disease;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellState;
+import org.wpsim.agroecosystem.automata.cell.LayerCellState;
 
 /**
  * Concrete disease cell state implementation

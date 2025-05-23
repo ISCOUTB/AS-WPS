@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Automata.layer;
+package org.wpsim.agroecosystem.automata.layer;
 
 /**
  * Interface to be implemented that holds the necessary parameters to the layer execution

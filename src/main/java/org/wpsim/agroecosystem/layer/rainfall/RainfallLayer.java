@@ -4,7 +4,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.wpsim.simulationcontrol.data.DateHelper;
-import org.wpsim.agroecosystem.Automata.layer.LayerExecutionParams;
+import org.wpsim.agroecosystem.automata.layer.LayerExecutionParams;
 import org.wpsim.agroecosystem.layer.LayerFunctionParams;
 import org.wpsim.agroecosystem.layer.SimWorldSimpleLayer;
 

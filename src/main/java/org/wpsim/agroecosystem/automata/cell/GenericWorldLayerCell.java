@@ -1,6 +1,6 @@
-package org.wpsim.agroecosystem.Automata.cell;
+package org.wpsim.agroecosystem.automata.cell;
 
-import org.wpsim.agroecosystem.Helper.WorldConfiguration;
+import org.wpsim.agroecosystem.helper.WorldConfiguration;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

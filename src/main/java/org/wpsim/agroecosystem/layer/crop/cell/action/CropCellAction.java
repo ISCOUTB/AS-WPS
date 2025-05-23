@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.crop.cell.action;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellAction;
+import org.wpsim.agroecosystem.automata.cell.LayerCellAction;
 
 /**
  * Crop cell action implementation, holds the payload, action type and date for an action to be taken into account during the layer execution

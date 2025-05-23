@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Messages;
+package org.wpsim.agroecosystem.messages;
 
 /**
  *

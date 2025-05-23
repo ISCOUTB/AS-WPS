@@ -1,9 +1,9 @@
 package org.wpsim.agroecosystem.layer;
 
-import org.wpsim.agroecosystem.Helper.MonthlyDataLoader;
-import org.wpsim.agroecosystem.Helper.WorldConfiguration;
-import org.wpsim.agroecosystem.Automata.cell.LayerCell;
-import org.wpsim.agroecosystem.Automata.layer.GenericWorldLayerUniqueCell;
+import org.wpsim.agroecosystem.helper.MonthlyDataLoader;
+import org.wpsim.agroecosystem.helper.WorldConfiguration;
+import org.wpsim.agroecosystem.automata.cell.LayerCell;
+import org.wpsim.agroecosystem.automata.layer.GenericWorldLayerUniqueCell;
 import org.wpsim.agroecosystem.layer.data.MonthData;
 
 import java.io.IOException;

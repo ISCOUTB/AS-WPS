@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.temperature;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellState;
+import org.wpsim.agroecosystem.automata.cell.LayerCellState;
 
 /**
  * Temperature cell state concrete implementation

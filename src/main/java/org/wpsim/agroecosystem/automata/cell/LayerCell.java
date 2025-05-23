@@ -1,4 +1,4 @@
-package org.wpsim.agroecosystem.Automata.cell;
+package org.wpsim.agroecosystem.automata.cell;
 
 /**
  * Interface that provides the basic contract for a cell

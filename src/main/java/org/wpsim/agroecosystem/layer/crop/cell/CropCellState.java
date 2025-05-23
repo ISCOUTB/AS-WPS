@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.crop.cell;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCellState;
+import org.wpsim.agroecosystem.automata.cell.LayerCellState;
 
 /**
  * Implementation for a generic crop cell state, holds the attributes that change over time

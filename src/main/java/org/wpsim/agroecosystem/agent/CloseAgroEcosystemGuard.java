@@ -2,7 +2,7 @@ package org.wpsim.agroecosystem.agent;
 
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.GuardBESA;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
 
 import java.util.logging.Logger;
 

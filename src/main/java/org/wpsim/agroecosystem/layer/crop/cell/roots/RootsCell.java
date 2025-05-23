@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer.crop.cell.roots;
 
-import org.wpsim.agroecosystem.Helper.Soil;
+import org.wpsim.agroecosystem.helper.Soil;
 import org.wpsim.agroecosystem.layer.crop.cell.CropCell;
 import org.wpsim.agroecosystem.layer.disease.DiseaseCell;
 

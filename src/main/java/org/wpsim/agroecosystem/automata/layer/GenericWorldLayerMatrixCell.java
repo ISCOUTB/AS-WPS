@@ -1,6 +1,6 @@
-package org.wpsim.agroecosystem.Automata.layer;
+package org.wpsim.agroecosystem.automata.layer;
 
-import org.wpsim.agroecosystem.Automata.cell.LayerCell;
+import org.wpsim.agroecosystem.automata.cell.LayerCell;
 
 /**
  * Abstract class that holds the structure for a layer that contains a matrix of cells

@@ -30,13 +30,13 @@ import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.viewerlens.util.wpsReport;
 import org.wpsim.agroecosystem.agent.CloseAgroEcosystemGuard;
 import org.wpsim.agroecosystem.agent.AgroEcosystem;
-import org.wpsim.agroecosystem.Guards.AgroEcosystemGuard;
+import org.wpsim.agroecosystem.guards.AgroEcosystemGuard;
 import org.wpsim.agroecosystem.agent.AgroEcosystemState;
-import org.wpsim.agroecosystem.Helper.Hemisphere;
-import org.wpsim.agroecosystem.Helper.Soil;
-import org.wpsim.agroecosystem.Helper.WorldConfiguration;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessage;
-import org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType;
+import org.wpsim.agroecosystem.helper.Hemisphere;
+import org.wpsim.agroecosystem.helper.Soil;
+import org.wpsim.agroecosystem.helper.WorldConfiguration;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessage;
+import org.wpsim.agroecosystem.messages.AgroEcosystemMessageType;
 import org.wpsim.agroecosystem.layer.crop.CropLayer;
 import org.wpsim.agroecosystem.layer.crop.cell.rice.RiceCell;
 import org.wpsim.agroecosystem.layer.crop.cell.roots.RootsCell;
@@ -50,7 +50,7 @@ import rational.mapping.Believes;
 
 import java.util.concurrent.*;
 
-import static org.wpsim.agroecosystem.Messages.AgroEcosystemMessageType.CROP_INIT;
+import static org.wpsim.agroecosystem.messages.AgroEcosystemMessageType.CROP_INIT;
 
 /**
  * @author jairo

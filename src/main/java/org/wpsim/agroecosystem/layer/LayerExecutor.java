@@ -1,6 +1,6 @@
 package org.wpsim.agroecosystem.layer;
 
-import org.wpsim.agroecosystem.Automata.layer.WorldLayer;
+import org.wpsim.agroecosystem.automata.layer.WorldLayer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

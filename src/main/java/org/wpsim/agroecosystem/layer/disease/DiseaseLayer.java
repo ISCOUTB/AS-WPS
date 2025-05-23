@@ -6,9 +6,9 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.wpsim.simulationcontrol.data.DateHelper;
 import org.wpsim.viewerlens.util.wpsReport;
-import org.wpsim.agroecosystem.Helper.WorldConfiguration;
-import org.wpsim.agroecosystem.Automata.layer.GenericWorldLayerGraphCell;
-import org.wpsim.agroecosystem.Automata.layer.LayerExecutionParams;
+import org.wpsim.agroecosystem.helper.WorldConfiguration;
+import org.wpsim.agroecosystem.automata.layer.GenericWorldLayerGraphCell;
+import org.wpsim.agroecosystem.automata.layer.LayerExecutionParams;
 import org.wpsim.agroecosystem.layer.LayerFunctionParams;
 import org.wpsim.agroecosystem.layer.disease.action.DiseaseCellAction;
 
