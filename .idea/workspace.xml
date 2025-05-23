@@ -11,13 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="392c53ea-9274-4c97-a65a-fcdba989e4d5" name="Changes" comment="Configuración hilos bajos, fuzzy bajo.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/agent/PeasantFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/agent/peasantfamily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/data/PeasantFamilyProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/data/PeasantFamilyProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/periodicguards/HeartBeatGuard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/periodicguards/HeartBeatGuard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/wellprodsim/config/wpsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/wellprodsim/config/wpsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/wellprodsim/wpsStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/wellprodsim/wpsStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/data/PeasantFamilyBelieves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/peasantfamily/data/PeasantFamilyBelieves.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -69,10 +69,12 @@ public class PeasantFamilyBelieves extends EmotionalComponent implements Believe
         this.daysToWorkForOther = original.getDaysToWorkForOther();
         this.taskLog = new HashMap<>(original.getOrderedTasksByDateJson());        
     }
-    @Override
+    PeasantFamilyBelieves copia = new PeasantFamilyBelieves(original);
+
+    /*@Override
 public PeasantFamilyBelieves clone() {
     return new PeasantFamilyBelieves(this);
-}
+}*/
     private PeasantFamilyProfile peasantProfile;
     private SeasonType currentSeason;
     private MoneyOriginType currentMoneyOrigin;
