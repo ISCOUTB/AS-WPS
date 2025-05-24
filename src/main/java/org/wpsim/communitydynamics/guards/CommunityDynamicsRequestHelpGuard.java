@@ -18,8 +18,8 @@ import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.GuardBESA;
 import BESA.Kernel.System.AdmBESA;
-import org.wpsim.peasantfamily.guards.FromCommunityDynamics.SocietyWorkerContractGuard;
-import org.wpsim.peasantfamily.guards.FromCommunityDynamics.SocietyWorkerContractorGuard;
+import org.wpsim.peasantfamily.guards.fromcommunitydynamics.SocietyWorkerContractGuard;
+import org.wpsim.peasantfamily.guards.fromcommunitydynamics.SocietyWorkerContractorGuard;
 import org.wpsim.communitydynamics.data.CommunityDynamicsState;
 import org.wpsim.communitydynamics.data.CommunityDynamicsDataMessage;
 

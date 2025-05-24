@@ -20,8 +20,8 @@ import BESA.Kernel.Agent.GuardBESA;
 import BESA.Kernel.System.AdmBESA;
 import org.wpsim.civicauthority.data.CivicAuthorityState;
 import org.wpsim.civicauthority.data.CivicAuthorityLandData;
-import org.wpsim.peasantfamily.guards.FromCivicAuthority.FromCivicAuthorityGuard;
-import org.wpsim.peasantfamily.guards.FromCivicAuthority.FromCivicAuthorityMessage;
+import org.wpsim.peasantfamily.guards.fromcivicauthority.FromCivicAuthorityGuard;
+import org.wpsim.peasantfamily.guards.fromcivicauthority.FromCivicAuthorityMessage;
 
 import java.util.Map;
 

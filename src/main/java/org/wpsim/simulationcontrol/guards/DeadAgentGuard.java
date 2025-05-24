@@ -18,7 +18,7 @@ import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.GuardBESA;
 import BESA.Kernel.System.AdmBESA;
 import org.wpsim.simulationcontrol.data.SimulationControlState;
-import org.wpsim.peasantfamily.guards.FromSimulationControl.ToControlMessage;
+import org.wpsim.peasantfamily.guards.fromsimulationcontrol.ToControlMessage;
 import org.wpsim.wellprodsim.wpsStart;
 
 /**

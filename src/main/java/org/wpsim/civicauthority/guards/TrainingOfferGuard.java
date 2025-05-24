@@ -4,8 +4,8 @@ import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.PeriodicGuardBESA;
 import BESA.Kernel.System.AdmBESA;
-import org.wpsim.peasantfamily.guards.FromCivicAuthority.FromCivicAuthorityTrainingGuard;
-import org.wpsim.peasantfamily.guards.FromCivicAuthority.FromCivicAuthorityTrainingMessage;
+import org.wpsim.peasantfamily.guards.fromcivicauthority.FromCivicAuthorityTrainingGuard;
+import org.wpsim.peasantfamily.guards.fromcivicauthority.FromCivicAuthorityTrainingMessage;
 import org.wpsim.wellprodsim.wpsStart;
 
 import java.util.ArrayList;

@@ -23,7 +23,7 @@ import BESA.Kernel.System.AdmBESA;
 import BESA.Log.ReportBESA;
 import org.json.JSONObject;
 import org.wpsim.peasantfamily.emotions.EmotionalEvaluator;
-import org.wpsim.peasantfamily.guards.FromSimulationControl.ToControlMessage;
+import org.wpsim.peasantfamily.guards.fromsimulationcontrol.ToControlMessage;
 import org.wpsim.simulationcontrol.guards.SimulationControlGuard;
 import org.wpsim.simulationcontrol.util.ControlCurrentDate;
 import org.wpsim.simulationcontrol.data.DateHelper;

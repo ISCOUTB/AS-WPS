@@ -15,7 +15,7 @@ import org.wpsim.agroecosystem.layer.crop.cell.action.CropCellAction;
 import org.wpsim.agroecosystem.layer.crop.cell.action.CropCellActionType;
 import org.wpsim.agroecosystem.layer.evapotranspiration.EvapotranspirationLayer;
 import org.wpsim.agroecosystem.layer.rainfall.RainfallLayer;
-import org.wpsim.agroecosystem.layer.shortWaveRadiation.ShortWaveRadiationLayer;
+import org.wpsim.agroecosystem.layer.shortwaveradiation.ShortWaveRadiationLayer;
 import org.wpsim.agroecosystem.layer.temperature.TemperatureCellState;
 import org.wpsim.agroecosystem.layer.temperature.TemperatureLayer;
 

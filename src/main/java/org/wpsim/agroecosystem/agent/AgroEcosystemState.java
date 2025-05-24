@@ -7,7 +7,7 @@ import org.wpsim.agroecosystem.layer.crop.CropLayer;
 import org.wpsim.agroecosystem.layer.disease.DiseaseLayer;
 import org.wpsim.agroecosystem.layer.evapotranspiration.EvapotranspirationLayer;
 import org.wpsim.agroecosystem.layer.rainfall.RainfallLayer;
-import org.wpsim.agroecosystem.layer.shortWaveRadiation.ShortWaveRadiationLayer;
+import org.wpsim.agroecosystem.layer.shortwaveradiation.ShortWaveRadiationLayer;
 import org.wpsim.agroecosystem.layer.temperature.TemperatureLayer;
 
 /**

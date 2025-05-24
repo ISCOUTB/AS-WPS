@@ -20,16 +20,16 @@ import BESA.Kernel.System.AdmBESA;
 import org.wpsim.bankoffice.data.BankOfficeState;
 import org.wpsim.bankoffice.data.BankOfficeMessage;
 import org.wpsim.bankoffice.data.BankOfficeMessageType;
-import org.wpsim.peasantfamily.guards.FromBankOffice.FromBankOfficeGuard;
-import org.wpsim.peasantfamily.guards.FromBankOffice.FromBankOfficeMessage;
-import org.wpsim.peasantfamily.guards.FromBankOffice.FromBankOfficeMessageType;
+import org.wpsim.peasantfamily.guards.frombankoffice.FromBankOfficeGuard;
+import org.wpsim.peasantfamily.guards.frombankoffice.FromBankOfficeMessage;
+import org.wpsim.peasantfamily.guards.frombankoffice.FromBankOfficeMessageType;
 import org.wpsim.wellprodsim.util.wpsCSV;
 import org.wpsim.viewerlens.util.wpsReport;
 import org.wpsim.wellprodsim.base.wpsGuardBESA;
 
 import static org.wpsim.bankoffice.data.BankOfficeMessageType.ASK_FOR_FORMAL_LOAN;
 import static org.wpsim.bankoffice.data.BankOfficeMessageType.ASK_FOR_INFORMAL_LOAN;
-import static org.wpsim.peasantfamily.guards.FromBankOffice.FromBankOfficeMessageType.*;
+import static org.wpsim.peasantfamily.guards.frombankoffice.FromBankOfficeMessageType.*;
 
 /**
  * @author jairo

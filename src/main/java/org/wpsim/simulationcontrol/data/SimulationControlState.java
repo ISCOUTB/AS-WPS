@@ -18,7 +18,7 @@ import BESA.ExceptionBESA;
 import BESA.Kernel.Agent.Event.EventBESA;
 import BESA.Kernel.Agent.StateBESA;
 import BESA.Kernel.System.AdmBESA;
-import org.wpsim.peasantfamily.guards.FromSimulationControl.FromSimulationControlGuard;
+import org.wpsim.peasantfamily.guards.fromsimulationcontrol.FromSimulationControlGuard;
 import org.wpsim.wellprodsim.config.wpsConfig;
 import org.wpsim.wellprodsim.wpsStart;
 import org.wpsim.viewerlens.server.WebsocketServer;
