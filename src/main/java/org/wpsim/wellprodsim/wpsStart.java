@@ -1,11 +1,11 @@
 /**
  * ==========================================================================
- * __      __ _ __   ___  *    WellProdSim                                  *
- * \ \ /\ / /| '_ \ / __| *    @version 1.0                                 *
- * \ V  V / | |_) |\__ \  *    @since 2023                                  *
- * \_/\_/  | .__/ |___/   *                                                 *
- * | |                    *    @author Jairo Serrano                        *
- * |_|                    *    @author Enrique Gonzalez                     *
+ * __      __ _ __   ___  * WellProdSim                                  *
+ * \ \ /\ / /| '_ \ / __| * @version 1.0                                 *
+ * \ V  V / | |_) |\__ \  * @since 2023                                  *
+ * \_/\_/  | .__/ |___/   * *
+ * | |                    * @author Jairo Serrano                        *
+ * |_|                    * @author Enrique Gonzalez                     *
  * ==========================================================================
  * Social Simulator used to estimate productivity and well-being of peasant *
  * families. It is event oriented, high concurrency, heterogeneous time     *
@@ -37,13 +37,13 @@ import java.util.Enumeration;
  */
 public class wpsStart {
 
-    public static wpsConfig config;
+    private static wpsConfig config;
     private static int PLAN_ID = 0;
-    public static int peasantFamiliesAgents;
-    public static boolean started = false;
-    public static int CREATED_AGENTS = 0;
+    private static int peasantFamiliesAgents;
+    private static boolean started = false;
+    private static int CREATED_AGENTS = 0;
     public static final long startTime = System.currentTimeMillis();
-    public static SimulationParams params = new SimulationParams();
+    private static SimulationParams params = new SimulationParams();
 
     /**
      * The main method to start the simulation.
@@ -295,12 +295,12 @@ public class wpsStart {
                                        
                                     
                  * ==========================================================================
-                 *   __      __ _ __   ___           WellProdSim                            *
-                 *   \\ \\ /\\ / /| '_ \\ / __|      @version 1.0                           *
-                 *    \\ V  V / | |_) |\\__ \\       @since 2023                            *
-                 *     \\_/\\_/  | .__/ |___/                                               *
-                 *             | |                   @author Jairo Serrano                  *
-                 *             |_|                   @author Enrique Gonzalez               *
+                 * __      __ _ __   ___           WellProdSim                            *
+                 * \\ \\ /\\ / /| '_ \\ / __|      @version 1.0                           *
+                 * \\ V  V / | |_) |\\__ \\       @since 2023                            *
+                 * \\_/\\_/  | .__/ |___/                                               *
+                 * | |                   @author Jairo Serrano                  *
+                 * |_|                   @author Enrique Gonzalez               *
                  * ==========================================================================
                  * Social Simulator used to estimate productivity and well-being of peasant *
                  * families. It is event oriented, high concurrency, heterogeneous time     *
@@ -324,5 +324,3 @@ public class wpsStart {
     }
 
 }
-
-
