@@ -74,5 +74,5 @@ public enum TimeConsumedBy {
     public int getTime() {
         return time;
     }
-    
+
 }
