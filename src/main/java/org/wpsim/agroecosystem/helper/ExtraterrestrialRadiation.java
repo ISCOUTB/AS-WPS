@@ -1,6 +1,7 @@
 package org.wpsim.agroecosystem.helper;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Data loaded from <a href="https://www.fao.org/3/x0490e/x0490e0j.htm#annex%202.%20meteorological%20tables">https://www.fao.org/3/x0490e/x0490e0j.htm#annex%202.%20meteorological%20tables</a>
@@ -88,11 +89,11 @@ public class ExtraterrestrialRadiation {
         southernData.put(70, new double[]{36.2, 37.5, 37.9, 36.8, 34.8, 33.4, 33.9, 35.7, 37.2, 37.4, 36.3, 35.6});
     }
 
-    public static HashMap<Integer, double[]> getNorthernData() {
+    public static Map<Integer, double[]> getNorthernData() {
         return northernData;
     }
 
-    public static HashMap<Integer, double[]> getSouthernData() {
+    public static Map<Integer, double[]> getSouthernData() {
         return southernData;
     }
 }
