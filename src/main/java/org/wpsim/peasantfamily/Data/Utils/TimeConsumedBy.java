@@ -1,11 +1,11 @@
 /**
  * ==========================================================================
- * __      __ _ __   ___  *    WellProdSim                                  *
- * \ \ /\ / /| '_ \ / __| *    @version 1.0                                 *
- *  \ V  V / | |_) |\__ \ *    @since 2023                                  *
- *   \_/\_/  | .__/ |___/ *                                                 *
- *           | |          *    @author Jairo Serrano                        *
- *           |_|          *    @author Enrique Gonzalez                     *
+ * __      __ _ __   ___  * WellProdSim                                  *
+ * \ \ /\ / /| '_ \ / __| * @version 1.0                                 *
+ * \ V  V / | |_) |\__ \ * @since 2023                                  *
+ * \_/\_/  | .__/ |___/ * *
+ * | |          * @author Jairo Serrano                        *
+ * |_|          * @author Enrique Gonzalez                     *
  * ==========================================================================
  * Social Simulator used to estimate productivity and well-being of peasant *
  * families. It is event oriented, high concurrency, heterogeneous time     *
@@ -64,7 +64,7 @@ public enum TimeConsumedBy {
     WorkForOtherTask(720),
     AlternativeWorkTask(360),
     GetTechAssistancePlan(240);
-    
+
     private int time;
 
     private TimeConsumedBy(int time) {
@@ -74,8 +74,5 @@ public enum TimeConsumedBy {
     public int getTime() {
         return time;
     }
-
-    public void setTime(int time) {
-        this.time = time;
-    }
+    
 }
