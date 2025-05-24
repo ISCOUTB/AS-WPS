@@ -15,27 +15,27 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
     /**
      *
      */
-    protected double cropFactor_ini;
+    protected double cropFactorIni;
 
     /**
      *
      */
-    protected double cropFactor_mid;
+    protected double cropFactorMid;
 
     /**
      *
      */
-    protected double cropFactor_end;
+    protected double cropFactorEnd;
 
     /**
      *
      */
-    protected double degreeDays_mid;
+    protected double degreeDaysMid;
 
     /**
      *
      */
-    protected double degreeDays_end;
+    protected double degreeDaysEnd;
 
     /**
      *
@@ -94,11 +94,11 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
 
     /**
      *
-     * @param cropFactor_ini
-     * @param cropFactor_mid
-     * @param cropFactor_end
-     * @param degreeDays_mid
-     * @param degreeDays_end
+     * @param cropFactorIni
+     * @param cropFactorMid
+     * @param cropFactorEnd
+     * @param degreeDaysMid
+     * @param degreeDaysEnd
      * @param cropArea
      * @param maximumRootDepth
      * @param depletionFraction
@@ -107,11 +107,11 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
      * @param diseaseCell
      * @param agentPeasantId
      */
-    public CropCell(double cropFactor_ini,
-                    double cropFactor_mid,
-                    double cropFactor_end,
-                    double degreeDays_mid,
-                    double degreeDays_end,
+    public CropCell(double cropFactorIni,
+                    double cropFactorMid,
+                    double cropFactorEnd,
+                    double degreeDaysMid,
+                    double degreeDaysEnd,
                     int cropArea,
                     double maximumRootDepth,
                     double depletionFraction,
@@ -119,11 +119,11 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
                     boolean isActive,
                     DiseaseCell diseaseCell,
                     String agentPeasantId) {
-        this.cropFactor_ini = cropFactor_ini;
-        this.cropFactor_mid = cropFactor_mid;
-        this.cropFactor_end = cropFactor_end;
-        this.degreeDays_mid = degreeDays_mid;
-        this.degreeDays_end = degreeDays_end;
+        this.cropFactorIni = cropFactorIni;
+        this.cropFactorMid = cropFactorMid;
+        this.cropFactorEnd = cropFactorEnd;
+        this.degreeDaysMid = degreeDaysMid;
+        this.degreeDaysEnd = degreeDaysEnd;
         this.cropArea = cropArea;
         this.isActive = isActive;
         this.diseaseCell = diseaseCell;
@@ -150,48 +150,48 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
      *
      * @return
      */
-    public double getCropFactor_ini() {
-        return cropFactor_ini;
+    public double getCropFactorIni() {
+        return cropFactorIni;
     }
 
     /**
      *
-     * @param cropFactor_ini
+     * @param cropFactorIni
      */
-    public void setCropFactor_ini(double cropFactor_ini) {
-        this.cropFactor_ini = cropFactor_ini;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public double getCropFactor_mid() {
-        return cropFactor_mid;
-    }
-
-    /**
-     *
-     * @param cropFactor_mid
-     */
-    public void setCropFactor_mid(double cropFactor_mid) {
-        this.cropFactor_mid = cropFactor_mid;
+    public void setCropFactorIni(double cropFactorIni) {
+        this.cropFactorIni = cropFactorIni;
     }
 
     /**
      *
      * @return
      */
-    public double getCropFactor_end() {
-        return cropFactor_end;
+    public double getCropFactorMid() {
+        return cropFactorMid;
     }
 
     /**
      *
-     * @param cropFactor_end
+     * @param cropFactorMid
      */
-    public void setCropFactor_end(double cropFactor_end) {
-        this.cropFactor_end = cropFactor_end;
+    public void setCropFactorMid(double cropFactorMid) {
+        this.cropFactorMid = cropFactorMid;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public double getCropFactorEnd() {
+        return cropFactorEnd;
+    }
+
+    /**
+     *
+     * @param cropFactorEnd
+     */
+    public void setCropFactorEnd(double cropFactorEnd) {
+        this.cropFactorEnd = cropFactorEnd;
     }
 
     /**
@@ -230,32 +230,32 @@ public abstract class CropCell<S extends LayerCellState> extends GenericWorldLay
      *
      * @return
      */
-    public double getDegreeDays_mid() {
-        return degreeDays_mid;
+    public double getDegreeDaysMid() {
+        return degreeDaysMid;
     }
 
     /**
      *
-     * @param degreeDays_mid
+     * @param degreeDaysMid
      */
-    public void setDegreeDays_mid(double degreeDays_mid) {
-        this.degreeDays_mid = degreeDays_mid;
+    public void setDegreeDaysMid(double degreeDaysMid) {
+        this.degreeDaysMid = degreeDaysMid;
     }
 
     /**
      *
      * @return
      */
-    public double getDegreeDays_end() {
-        return degreeDays_end;
+    public double getDegreeDaysEnd() {
+        return degreeDaysEnd;
     }
 
     /**
      *
-     * @param degreeDays_end
+     * @param degreeDaysEnd
      */
-    public void setDegreeDays_end(double degreeDays_end) {
-        this.degreeDays_end = degreeDays_end;
+    public void setDegreeDaysEnd(double degreeDaysEnd) {
+        this.degreeDaysEnd = degreeDaysEnd;
     }
 
     /**
