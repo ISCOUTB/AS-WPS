@@ -18,9 +18,9 @@ import org.wpsim.agroecosystem.layer.data.MonthData;
 public class ShortWaveRadiationLayer extends SimWorldSimpleLayer<ShortWaveRadiationCell> {
 
     //private static final Logger logger = LogManager.getLogger(ShortWaveRadiationLayer.class);
-    private final double albedoReflection = 0.23;
-    private double a_s = 0.25;
-    private double b_s = 0.5;
+    private static final double ALBEDO_REFLECTION = 0.23;
+    private static final double A_S = 0.25;
+    private static final double B_S = 0.5;
     private Hemisphere hemisphere;
     private double[] monthlyExtraterrestrialRadiationForLocation;
 
@@ -83,13 +83,12 @@ public class ShortWaveRadiationLayer extends SimWorldSimpleLayer<ShortWaveRadiat
     }
 
     private double calculateNetShortWaveRadiationForMonth(int month) {
-        return (1 - this.albedoReflection) * this.calculateShortWaveRadiation(month);
+        return (1 - ALBEDO_REFLECTION) * this.calculateShortWaveRadiation(month);
     }
 
     private double calculateShortWaveRadiation(int month) {
         MonthData monthData = this.monthlyData.get(month);
-        return (this.a_s + this.b_s * (this.calculateGaussianFromMonthData(month) / monthData.getMaxValue())) * this.monthlyExtraterrestrialRadiationForLocation[month];
+        return (A_S + B_S * (this.calculateGaussianFromMonthData(month) / monthData.getMaxValue())) * this.monthlyExtraterrestrialRadiationForLocation[month];
     }
-
 
 }

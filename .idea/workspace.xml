@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392c53ea-9274-4c97-a65a-fcdba989e4d5" name="Changes" comment="Configuración hilos bajos, fuzzy bajo.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/web/index.vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/web/index.vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/shortwaveradiation/ShortWaveRadiationLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wpsim/agroecosystem/layer/shortwaveradiation/ShortWaveRadiationLayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +33,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="MavenRunConfiguration" name="Simulator" />
-    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
