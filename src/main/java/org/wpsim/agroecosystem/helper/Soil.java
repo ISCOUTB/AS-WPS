@@ -74,9 +74,9 @@ public enum Soil {
      *
      * @param waterContentAtFieldCapacity
      */
-    public void setWaterContentAtFieldCapacity(double waterContentAtFieldCapacity) {
+   /* public void setWaterContentAtFieldCapacity(double waterContentAtFieldCapacity) {
         this.waterContentAtFieldCapacity = waterContentAtFieldCapacity;
-    }
+    }*/
 
     /**
      *
@@ -90,9 +90,9 @@ public enum Soil {
      *
      * @param waterContentAtWiltingPoint
      */
-    public void setWaterContentAtWiltingPoint(double waterContentAtWiltingPoint) {
+    /*public void setWaterContentAtWiltingPoint(double waterContentAtWiltingPoint) {
         this.waterContentAtWiltingPoint = waterContentAtWiltingPoint;
-    }
+    }*/
 
     /**
      *
@@ -106,7 +106,8 @@ public enum Soil {
      *
      * @param fieldCapacityMinusWiltingPoint
      */
-    public void setFieldCapacityMinusWiltingPoint(double fieldCapacityMinusWiltingPoint) {
+   /* public void setFieldCapacityMinusWiltingPoint(double fieldCapacityMinusWiltingPoint) {
         this.fieldCapacityMinusWiltingPoint = fieldCapacityMinusWiltingPoint;
-    }
+    }*/
 }
+
