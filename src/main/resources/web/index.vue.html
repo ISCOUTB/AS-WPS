@@ -37,7 +37,6 @@
 
 <script>
     import devtools from '@vue/devtools'
-
     const Navbar = {
         template: `
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -65,7 +64,6 @@
             }
         }
     };
-
     const AgentList = {
         props: ['agentData'],
         template: `
@@ -81,7 +79,6 @@
             }
         }
     };
-
     const AgentDetails = {
         props: ['selectedAgent'],
         template: `
@@ -95,8 +92,6 @@
     </div>
     `
     };
-
-
     const FooterComponent = {
         template: `
     <footer class="bg-light text-center py-3">
@@ -104,7 +99,6 @@
     </footer>
     `
     };
-
     const app = Vue.createApp({
         data() {
             return {
@@ -142,16 +136,13 @@
             handleMessage(event) {
                 let prefix = event.data.substring(0, 2);
                 let data = event.data.substring(2);
-                switch (prefix) {
-                    case "j=":
-                        try {
-                            let newAgentData = JSON.parse(data);
-                            this.agentData[newAgentData.name] = newAgentData;
-                        } catch (error) {
-                            console.error("Error parsing JSON:", error);
-                        }
-                        break;
-                    // ... (otros casos de manejo de mensajes) ...
+                if (prefix === "j=") {
+                    try {
+                        let newAgentData = JSON.parse(data);
+                        this.agentData[newAgentData.name] = newAgentData;
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
                 }
             }
         }
